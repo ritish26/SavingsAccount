@@ -1,0 +1,21 @@
+services:
+  esdb-node:
+    image: eventstore/eventstore:latest
+    container_name: eventstore
+    ports:
+      - "2113:2113"
+    environment:
+      - EVENTSTORE_INSECURE=True
+      - EVENTSTORE_RUN_PROJECTIONS=All
+      - EVENTSTORE_ENABLE_ATOM_PUB_OVER_HTTP=True
+    command: "--insecure --run-projections=All --enable-atom-pub-over-http"
+    restart: unless-stopped
+
+  seq:
+    image: datalust/seq
+    container_name: seq
+    environment:
+      - ACCEPT_EULA=Y
+    ports:
+      - "5341:80"
+    restart: always
