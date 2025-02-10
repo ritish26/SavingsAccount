@@ -1,3 +1,4 @@
+using System.Runtime.Serialization;
 using Domain.Aggregates;
 
 namespace Domain.Events;
@@ -19,4 +20,18 @@ public class SavingsAccountCreated : BaseDomainEvent
     public long AccountId { get;  set; }
     
     public decimal Balance { get;  set; }
+}
+
+public class TransactionAdded : BaseDomainEvent
+{
+    public TransactionAdded(string id, string transactionType, decimal amount, long version) : 
+        base(id, nameof(TransactionAdded), version)
+    {
+        TransactionType = transactionType;
+        Amount = amount;
+    }
+    
+    public string TransactionType { get;  set; }
+    
+    public decimal Amount { get;  set; }
 }

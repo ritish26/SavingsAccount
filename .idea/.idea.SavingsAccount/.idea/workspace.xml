@@ -10,7 +10,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3f1b4dd-7b4d-4ea7-b1fb-d835c8ae936e" name="Changes" comment="" />
+    <list default="true" id="c3f1b4dd-7b4d-4ea7-b1fb-d835c8ae936e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SavingsAccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SavingsAccount/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Commands/AddTransaction/AddTransactionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Commands/AddTransaction/AddTransactionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Aggregates/SavingsAccountAggregate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Aggregates/SavingsAccountAggregate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Events/SavingsAccount.event.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Events/SavingsAccount.event.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Repository/IAggregateRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Repository/IAggregateRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SavingsAccount.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/SavingsAccount.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/Controllers/SavingsAccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Controllers/SavingsAccountController.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,11 +50,21 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/AggregateRoot.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/AggregateRoot.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/SavingsAccountAggregate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Events/SavingsAccount.event.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/IAggregateRepository.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/125a6f6ba9894cd5a12f9ecb840ab9063e400/c1/a3ca98fc/EventStoreClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1d94cfcdca8c4744a672e2f649393dc55308/dd/c9dfcb31/EnvironmentVariablesExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4dadf7f7cc614776914a2461b918f34fb3200/7b/458f140b/ThrowHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7222c5a8263b4a05b4d65be9c65312402f200/4f/0c061980/StreamState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7222c5a8263b4a05b4d65be9c65312402f200/c6/d15050a1/WrongExpectedVersionException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7222c5a8263b4a05b4d65be9c65312402f200/f8/bddfee0f/ResolvedEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7d07ae8ce89a4a13ac3e62a7133516d910c800/04/43230186/InvokeHandlerTerminator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7d07ae8ce89a4a13ac3e62a7133516d910c800/12/a63b07db/IMessageSession.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a066b61dd01a440cb5622a632b1409b17a600/47/f9ba9bfd/WebHostBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a105b4a31e844e8895058fb1b02b9bc8219600/a5/c4ae8230/ActionMethodExecutor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -77,7 +95,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Project.SavingsAccount.executor": "Run",
+    ".NET Project.SavingsAccount.executor": "Debug",
+    "ATTACH_DIALOG_SELECTED_CONTAINER": "eventstore",
     "Docker.Docker Image (1).executor": "Run",
     "Docker.Docker Image.executor": "Run",
     "Docker.docker-compose.yaml.eventstore: Compose Deployment.executor": "Run",
@@ -88,10 +107,15 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CidrLocalAttachDebugger.recentlyUsed">
+      <recent name="com.jetbrains.rider.cpp.debugger.RiderCppLLDBDriverConfiguration" />
+    </key>
+  </component>
   <component name="RunManager" selected=".NET Project.SavingsAccount">
     <configuration name="Application" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -299,6 +323,45 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Repository/AggregateStore.cs</url>
+          <line>87</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/Repository/AggregateStore.cs" containingFunctionPresentation="Method 'Save'">
+            <startOffsets>
+              <option value="2801" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2802" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/EventStore/EventStore.cs</url>
+          <line>34</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/EventStore/EventStore.cs" containingFunctionPresentation="Method 'GetLastEventNumber'">
+            <startOffsets>
+              <option value="903" />
+            </startOffsets>
+            <endOffsets>
+              <option value="904" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/WebApi/Controllers/SavingsAccountController.cs</url>
+          <line>26</line>
+          <properties documentPath="$PROJECT_DIR$/WebApi/Controllers/SavingsAccountController.cs" containingFunctionPresentation="Method 'CreateSavingsAccount'">
+            <startOffsets>
+              <option value="821" />
+            </startOffsets>
+            <endOffsets>
+              <option value="845" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

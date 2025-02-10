@@ -9,6 +9,8 @@ public interface IAggregateRepository<TAggregate> where TAggregate : AggregateRo
 {
     Task Create(Func<Task<TAggregate>> createFunc);
     
+    Task Update(string aggregate, Func<TAggregate, Task> updateFunc);
+    
 }
 
 public abstract class AggregateRepository<TAggregate> : IAggregateRepository<TAggregate>
@@ -29,4 +31,21 @@ public abstract class AggregateRepository<TAggregate> : IAggregateRepository<TAg
         var aggregate = await createFunc();
         await AggregateStore.Save(aggregate);
     }
+
+    public async Task Update(string aggregrateId, Func<TAggregate, Task> updateFunc)
+    {
+        ArgumentNullException.ThrowIfNull(updateFunc);
+        ArgumentNullException.ThrowIfNull(aggregrateId);
+
+        var aggregate = await AggregateStore.Load<TAggregate>(aggregrateId, true);
+
+        if (aggregate == null)
+        {
+            throw new ArgumentNullException($"Cannot find aggregate {aggregrateId}");
+        }
+
+        await updateFunc(aggregate);
+        await AggregateStore.Save(aggregate);
+    }
+    
 }

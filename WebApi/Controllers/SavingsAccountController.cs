@@ -38,8 +38,18 @@ public class SavingsAccountController : Controller
     }
 
     [HttpPost("add-transaction/{bankId:long}/{accountId:long}")]
-    public IActionResult AddTransaction(long bankId, long accountId, [FromBody] AddTransactionRequest request)
+    public async Task<IActionResult> AddTransaction(long bankId, long accountId, [FromBody] AddTransactionRequest request)
     {
+        if (request.Amount < 0)
+        {
+            _logger.LogError("Invalid balance to Debit "); 
+            return BadRequest();
+        }
+        
+        var command = _mapper.Map<AddTransactionRequest>(request);
+        await _messageSession.SendLocal(command); 
+        
+        _logger.LogInformation("Transaction added successfully");
         return Ok();
     }
     
