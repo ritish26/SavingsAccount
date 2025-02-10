@@ -22,7 +22,13 @@ public class AggregateStore : IAggregateStore
 
     public async Task<TAggregate?> Load<TAggregate>(string aggregateId, bool useSnapshot) where TAggregate : AggregateRoot
     {
-        var streamName = $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}-{aggregateId}";
+        var streamName =
+            $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}-{aggregateId}";
+        
+        if(!await _eventStore.Exists(streamName))
+        {
+            return null;
+        }
         
         long startVersion = 0;
         TAggregate? aggregate = null;
@@ -54,11 +60,6 @@ public class AggregateStore : IAggregateStore
         TAggregate? aggregate = null;
         var streamName = $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}-{aggregateId}";
         
-        if(!await _eventStore.Exists(streamName))
-        {
-            return null;
-        }
-
         try
         {
             var events = await _eventStore.ReadStream(streamName, -1, 1, Direction.Backwards);
