@@ -32,6 +32,15 @@ public class SavingsAccountAggregate : AggregateRoot
         RaiseEvent(new SavingsAccountCreated(bankName, bankId, accountId, balance, 0));
     }
 
+    public void AddTransaction(string transactionType, decimal amount)
+    {
+        if (amount < 0)
+        {
+            throw new InvalidDataException(amount + " can't be less than 0");
+        }
+        
+        RaiseEvent(new TransactionAdded($"{BankId}--{AccountId}", transactionType, amount, Version+1));
+    }
     public void When(SavingsAccountCreated @event)
     {
         Id = $"{@event.BankName}-{@event.AccountId}";
