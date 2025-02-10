@@ -10,14 +10,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3f1b4dd-7b4d-4ea7-b1fb-d835c8ae936e" name="Changes" comment="">
+    <list default="true" id="c3f1b4dd-7b4d-4ea7-b1fb-d835c8ae936e" name="Changes" comment="Removed one condition which is not requried">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SavingsAccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SavingsAccount/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Commands/AddTransaction/AddTransactionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Commands/AddTransaction/AddTransactionHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Aggregates/SavingsAccountAggregate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Aggregates/SavingsAccountAggregate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Events/SavingsAccount.event.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Events/SavingsAccount.event.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Repository/IAggregateRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Repository/IAggregateRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SavingsAccount.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/SavingsAccount.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApi/Controllers/SavingsAccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApi/Controllers/SavingsAccountController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +31,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -53,14 +49,30 @@
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/AggregateRoot.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/AggregateRoot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/AggregateRoot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/AggregateRoot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/SavingsAccountAggregate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/SavingsAccountAggregate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/SavingsAccountAggregate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Events/SavingsAccount.event.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Events/SavingsAccount.event.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Events/SavingsAccount.event.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Events/SavingsAccount.event.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/IAggregateRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/IAggregateRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Controllers/SavingsAccountController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/125a6f6ba9894cd5a12f9ecb840ab9063e400/c1/a3ca98fc/EventStoreClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1d94cfcdca8c4744a672e2f649393dc55308/dd/c9dfcb31/EnvironmentVariablesExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4dadf7f7cc614776914a2461b918f34fb3200/7b/458f140b/ThrowHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6d2342c247c64eb7a9b3702e481e4443f83e00/4f/1150318f/StackFrameIterator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7222c5a8263b4a05b4d65be9c65312402f200/4f/0c061980/StreamState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7222c5a8263b4a05b4d65be9c65312402f200/c6/d15050a1/WrongExpectedVersionException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7222c5a8263b4a05b4d65be9c65312402f200/f8/bddfee0f/ResolvedEvent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -95,7 +107,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Project.SavingsAccount.executor": "Debug",
+    ".NET Project.SavingsAccount.executor": "Run",
     "ATTACH_DIALOG_SELECTED_CONTAINER": "eventstore",
     "Docker.Docker Image (1).executor": "Run",
     "Docker.Docker Image.executor": "Run",
@@ -245,6 +257,23 @@
       <workItem from="1739011252290" duration="12913000" />
       <workItem from="1739044648890" duration="2596000" />
     </task>
+    <task id="LOCAL-00001" summary="Added New command to add tranactions">
+      <option name="closed" value="true" />
+      <created>1739212477728</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739212477729</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Removed one condition which is not requried">
+      <option name="closed" value="true" />
+      <created>1739213426692</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739213426692</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +310,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Added New command to add tranactions" />
+    <MESSAGE value="Removed one condition which is not requried" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed one condition which is not requried" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -326,13 +358,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Infrastructure/Repository/AggregateStore.cs</url>
-          <line>87</line>
+          <line>81</line>
           <properties documentPath="$PROJECT_DIR$/Infrastructure/Repository/AggregateStore.cs" containingFunctionPresentation="Method 'Save'">
             <startOffsets>
-              <option value="2801" />
+              <option value="2681" />
             </startOffsets>
             <endOffsets>
-              <option value="2802" />
+              <option value="2682" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="47" />
@@ -362,6 +394,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Application/Commands/CreateSavingsAccount/CreateSavingsAccount/CreateSavingsAccountHandler.cs</url>
+          <line>20</line>
+          <properties documentPath="$PROJECT_DIR$/Application/Commands/CreateSavingsAccount/CreateSavingsAccount/CreateSavingsAccountHandler.cs" containingFunctionPresentation="Method 'Handle'">
+            <startOffsets>
+              <option value="801" />
+            </startOffsets>
+            <endOffsets>
+              <option value="802" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

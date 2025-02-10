@@ -41,4 +41,18 @@ public class SavingsAccountAggregate : AggregateRoot
         Balance = @event.Balance;
         Version = @event.Version;
     }
+
+    public class TransactionAdded : BaseDomainEvent
+    {
+        public TransactionAdded(string id, string transactionType, decimal amount, long version) :
+            base(id, nameof(TransactionAdded), version)
+        {
+            TransactionType = transactionType;
+            Amount = amount;
+        }
+
+        public string TransactionType { get; set; }
+
+        public decimal Amount { get; set; }
+    }
 }
