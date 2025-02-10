@@ -110,14 +110,17 @@ public class AggregateStore : IAggregateStore
             
             await _eventStore.CreateNewStream(streamName, eventsToWrite);
         }
-        
-        await _eventStore.AppendEventsToStream(streamName, eventsToWrite);
-        aggregate.MarkChangesAsCommitted();
 
-        await saveSnapshot(aggregate);
+        else
+        {
+            await _eventStore.AppendEventsToStream(streamName, eventsToWrite);
+        }
+        
+        aggregate.MarkChangesAsCommitted();
+        await SaveSnapshot(aggregate);
     }
 
-    public async Task saveSnapshot<TAggregate>(TAggregate aggregate, bool force=false) where TAggregate : AggregateRoot
+    public async Task SaveSnapshot<TAggregate>(TAggregate aggregate, bool force=false) where TAggregate : AggregateRoot
     {
         long? lastSnapshotVersion = null;
         if (!force)
