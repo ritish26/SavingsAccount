@@ -1,4 +1,5 @@
 using Application.Commands;
+using Application.Commands.AddTransaction;
 using Application.Requests;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
@@ -38,7 +39,7 @@ public class SavingsAccountController : Controller
     }
 
     [HttpPost("add-transaction/{bankId:long}/{accountId:long}")]
-    public async Task<IActionResult> AddTransaction(long bankId, long accountId, [FromBody] AddTransactionRequest request)
+    public async Task<IActionResult> AddTransaction([FromBody] AddTransactionRequest request)
     {
         if (request.Amount < 0)
         {
@@ -46,7 +47,7 @@ public class SavingsAccountController : Controller
             return BadRequest();
         }
         
-        var command = _mapper.Map<AddTransactionRequest>(request);
+        var command = _mapper.Map<AddTransactionCommand>(request);
         await _messageSession.SendLocal(command); 
         
         _logger.LogInformation("Transaction added successfully");
