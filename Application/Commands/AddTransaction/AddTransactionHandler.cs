@@ -24,7 +24,7 @@ public class AddTransactionHandler : IHandleMessages<AddTransactionCommand>
             throw new ArgumentNullException("Savings account cannot be negative");
         }
 
-        await _savingsAccountRepository.Update($"{message.BankId}--{message.AccountId}", savingsAccount =>
+        await _savingsAccountRepository.Update($"{message.BankName}-{message.BankId}", savingsAccount =>
             {
                 if (message.TransactionType != null)
                     savingsAccount.AddTransaction(message.TransactionType, message.Amount);

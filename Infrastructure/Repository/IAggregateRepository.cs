@@ -41,7 +41,7 @@ public abstract class AggregateRepository<TAggregate> : IAggregateRepository<TAg
 
         if (aggregate == null)
         {
-            throw new ArgumentNullException($"Cannot find aggregate {aggregrateId}");
+            throw new ArgumentNullException($"Cannot find aggregate : {aggregrateId}");
         }
 
         await updateFunc(aggregate);
