@@ -37,9 +37,9 @@ public class SavingsAccountController : Controller
        _logger.LogInformation("Command savings account created");
        return Ok();
     }
-
-    [HttpPut("add-transaction/{bankId:long}/{bankName}")]
-    public async Task<IActionResult> AddTransaction(long bankId, string bankName,
+    
+    [HttpPut("add-transaction/{bankName}/{accountId:long}")]
+    public async Task<IActionResult> AddTransaction(string bankName, long accountId,
         [FromBody] AddTransactionRequest request)
     {
         if (request.Amount < 0)
@@ -49,8 +49,8 @@ public class SavingsAccountController : Controller
         }
         
         var command = _mapper.Map<AddTransactionCommand>(request);
-        command.BankId = bankId;
         command.BankName = bankName;
+        command.AccountId = accountId;
         
         await _messageSession.SendLocal(command); 
         _logger.LogInformation("Transaction added successfully");
