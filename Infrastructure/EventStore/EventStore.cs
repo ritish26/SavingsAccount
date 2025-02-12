@@ -96,7 +96,7 @@ public class EventStore : IEventStore
                 }
             }
 
-            var eventData = EvenDataExtension.ToDomainEvent(@event.Event.EventType,
+            var eventData = EventDataExtension.ToDomainEvent(@event.Event.EventType,
                 Encoding.UTF8.GetString(@event.Event.Data.ToArray()));
 
             if (eventData == null)
@@ -115,7 +115,8 @@ public class EventStore : IEventStore
         ArgumentNullException.ThrowIfNull(events);
         ArgumentNullException.ThrowIfNull(streamName);
 
-        var eventArray = events.Select(@event => ToEventStoreEventData(@event, isLinkType)).ToArray();
+        var eventArray = events.Select(
+            @event => ToEventStoreEventData(@event, isLinkType)).ToArray();
         try
         {
             await _eventStoreClient.AppendToStreamAsync(streamName, StreamState.NoStream, eventArray);
@@ -153,7 +154,7 @@ public class EventStore : IEventStore
         var eventMetaData = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(@event.Metadata));
 
         var eventStoreEventData = new ES.EventData(Uuid.NewUuid(),
-            (isLinkType ? SystemEventTypes.LinkTo : @event.GetType().FullName ?? string.Empty), eventPayload,
+            (isLinkType ? SystemEventTypes.LinkTo : @event.Payload.GetType().FullName ?? string.Empty), eventPayload,
             eventMetaData);
 
         return eventStoreEventData;

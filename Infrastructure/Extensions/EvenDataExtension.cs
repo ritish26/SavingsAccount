@@ -1,5 +1,6 @@
 
 
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 using Domain.Aggregates;
 using Infrastructure.EventStore;
@@ -7,9 +8,9 @@ using Newtonsoft.Json;
 
 namespace Infrastructure.Extensions;
 
-public static class EvenDataExtension
+public static class EventDataExtension
 {
-    public static EventData ToEventData(this object @event,  Dictionary<string, string> metadata)
+    public static EventData ToEventData<T>([DisallowNull] this T @event,  Dictionary<string, string> metadata)
     {
         ArgumentNullException.ThrowIfNull(@event);
         return new EventData(@event, metadata);
