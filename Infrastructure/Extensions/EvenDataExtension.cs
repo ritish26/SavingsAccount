@@ -24,11 +24,11 @@ public static class EvenDataExtension
 
         if (type == null)
         {
-            return null;
+            throw new ArgumentException($"Event type {eventType} not found");
         }
-
+        
         return JsonConvert.DeserializeObject(eventData,type) as BaseDomainEvent;
-
+        
     }
 
     private static Type? GetTypeByEventType(string eventType)

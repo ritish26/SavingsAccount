@@ -51,17 +51,19 @@ public class SavingsAccountAggregate : AggregateRoot
         Version = @event.Version;
     }
 
-    public class TransactionAdded : BaseDomainEvent
+    public void When(TransactionAdded @event)
     {
-        public TransactionAdded(string id, string transactionType, decimal amount, long version) :
-            base(id, nameof(TransactionAdded), version)
+        if (@event.TransactionType.Equals("Credit", StringComparison.InvariantCultureIgnoreCase))
         {
-            TransactionType = transactionType;
-            Amount = amount;
+            Balance += @event.Amount;
         }
 
-        public string TransactionType { get; set; }
-
-        public decimal Amount { get; set; }
+        if (@event.TransactionType.Equals("Debit", StringComparison.InvariantCultureIgnoreCase))
+        {
+            Balance -= @event.Amount;
+        }
+        
+        Version = @event.Version;
     }
+
 }
