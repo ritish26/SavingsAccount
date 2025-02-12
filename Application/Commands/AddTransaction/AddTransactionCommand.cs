@@ -2,7 +2,7 @@ namespace Application.Commands.AddTransaction;
 
 public class AddTransactionCommand : ICommand
 {
-    public long BankId { get; set; }
+    public long AccountId { get; set; }
     
     public string? BankName { get; set; }
     

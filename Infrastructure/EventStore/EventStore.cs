@@ -149,10 +149,11 @@ public class EventStore : IEventStore
         var eventPayload = Encoding.UTF8.GetBytes(isLinkType
             ? @event.Payload as string ?? string.Empty
             : JsonConvert.SerializeObject(@event.Payload));
+        
         var eventMetaData = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(@event.Metadata));
 
         var eventStoreEventData = new ES.EventData(Uuid.NewUuid(),
-            (isLinkType ? SystemEventTypes.LinkTo : @eventPayload.GetType().FullName ?? string.Empty), eventPayload,
+            (isLinkType ? SystemEventTypes.LinkTo : @event.GetType().FullName ?? string.Empty), eventPayload,
             eventMetaData);
 
         return eventStoreEventData;

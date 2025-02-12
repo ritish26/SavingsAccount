@@ -1,9 +1,8 @@
 
 
+using System.Reflection;
 using Domain.Aggregates;
-using Domain.Events;
 using Infrastructure.EventStore;
-using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
 namespace Infrastructure.Extensions;
@@ -25,7 +24,7 @@ public static class EvenDataExtension
 
         if (type == null)
         {
-            
+            return null;
         }
 
         return JsonConvert.DeserializeObject(eventData,type) as BaseDomainEvent;
@@ -35,17 +34,29 @@ public static class EvenDataExtension
     private static Type? GetTypeByEventType(string eventType)
     {
         ArgumentNullException.ThrowIfNull(eventType);
+
         foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
         {
-            if (assembly.GetReferencedAssemblies().Any(a => a.Name == "System.Web" || a.Name == "System.Data.Linq"))
+            try
             {
-                continue;
+                Type? type = assembly.GetExportedTypes().FirstOrDefault(t => t.FullName == eventType);
+                if (type != null)
+                {
+                    return type;
+                }
             }
-            
-            Type? type = assembly.GetExportedTypes().FirstOrDefault(t => t.FullName == eventType);
-            if (type != null)
+            catch (ReflectionTypeLoadException ex)
             {
-                return type;
+                Console.WriteLine($"Failed to load types from assembly: {assembly.FullName}");
+                foreach (var loaderException in ex.LoaderExceptions)
+                {
+                    Console.WriteLine($"Loader Exception: {loaderException.Message}");
+                }
+                // Continue to next assembly instead of crashing
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Unexpected error loading types from {assembly.FullName}: {ex.Message}");
             }
         }
         return null;
