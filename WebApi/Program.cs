@@ -71,7 +71,7 @@ public class Program
 
     
     // NServiceBus Configuration
-    public static EndpointConfiguration RegisterNServiceBus(HostBuilderContext _)
+    private static EndpointConfiguration RegisterNServiceBus(HostBuilderContext _)
     { 
         var endpointConfiguration = new EndpointConfiguration("SavingsAccountBus");
         var transport = endpointConfiguration.UseTransport<LearningTransport>();

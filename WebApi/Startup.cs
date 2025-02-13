@@ -23,7 +23,7 @@ public class Startup
     services.AddEventStore(_configuration);
     services.AddSwaggerGen();
     services.AddControllers();
-    services.AddAutoMapper(Assembly.Load("Application")); //Load the automapper profiles from Application Project
+    services.AddAutoMapper(Assembly.Load("Application"));  //Load the automapper profiles from Application Project
     services.AddTransient<IAggregateStore, AggregateStore>();
     services.AddTransient<ISavingsAccountRepository, SavingsAccountRepository>();
     services.AddSingleton<IEventStore, Infrastructure.EventStore.EventStore>();

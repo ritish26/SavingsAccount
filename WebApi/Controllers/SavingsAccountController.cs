@@ -34,7 +34,7 @@ public class SavingsAccountController : Controller
         var command = _mapper.Map<CreateSavingsAccountCommand>(request);
         await _messageSession.SendLocal(command); 
         
-       _logger.LogInformation("Command savings account created");
+       _logger.LogInformation("Savings account created successfully");
        return Ok();
     }
     
@@ -44,7 +44,7 @@ public class SavingsAccountController : Controller
     {
         if (request.Amount < 0)
         {
-            _logger.LogError("Invalid balance to Debit "); 
+            _logger.LogError("Invalid balance for adding transaction "); 
             return BadRequest();
         }
         

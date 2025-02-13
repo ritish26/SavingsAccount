@@ -16,7 +16,7 @@ public interface IAggregateRepository<TAggregate> where TAggregate : AggregateRo
 public abstract class AggregateRepository<TAggregate> : IAggregateRepository<TAggregate>
     where TAggregate : AggregateRoot
 {
-    protected IAggregateStore AggregateStore { get; }
+    private IAggregateStore AggregateStore { get; }
     private readonly ILogger<AggregateRepository<TAggregate>> _logger;
     
     protected AggregateRepository(ILogger<AggregateRepository<TAggregate>> logger, IAggregateStore aggregateStore)

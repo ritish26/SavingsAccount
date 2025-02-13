@@ -19,12 +19,19 @@ public class CreateSavingsAccountHandler : IHandleMessages<CreateSavingsAccountC
 
     public async Task Handle(CreateSavingsAccountCommand message, IMessageHandlerContext context)
     {
-        _logger.LogInformation("CreateSavingsAccount Information received");
+        try
+        {
+            await _savingsAccountRepository.Create(() =>
+                Task.FromResult(new SavingsAccountAggregate(message.BankName, message.Balance,
+                    message.BankId, message.AccountId)));
+            _logger.LogDebug("SavingsAccount created successfully");
+        }
+
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, ex.Message);
+        }
+       
         
-        await _savingsAccountRepository.Create(() =>
-            Task.FromResult(new SavingsAccountAggregate(message.BankName, message.Balance,
-                message.BankId, message.AccountId)));
-        
-        _logger.LogInformation("SavingsAccount created");
     }
 }
