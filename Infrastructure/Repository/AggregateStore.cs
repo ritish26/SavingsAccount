@@ -58,7 +58,7 @@ public class AggregateStore : IAggregateStore
 
         catch (Exception ex)
         {
-            _logger.LogError(ex, ex.Message);
+            _logger.LogError(ex, ex.StackTrace);
         }
         
         return aggregate;
@@ -111,7 +111,7 @@ public class AggregateStore : IAggregateStore
 
         var streamName = $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}-{aggregate.Id}";
 
-        if (aggregateInitialVersion == -1)
+        if (aggregateInitialVersion == 0)
         {
             // New Stream
            if(await _eventStore.Exists(streamName))
