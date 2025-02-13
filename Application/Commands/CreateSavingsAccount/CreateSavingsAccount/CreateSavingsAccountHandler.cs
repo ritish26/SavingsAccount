@@ -29,9 +29,8 @@ public class CreateSavingsAccountHandler : IHandleMessages<CreateSavingsAccountC
 
         catch (Exception ex)
         {
-            _logger.LogError(ex, ex.Message);
+            _logger.LogError(ex, $"Account is not able to create du to the error {ex.Message}");
         }
-       
         
     }
 }

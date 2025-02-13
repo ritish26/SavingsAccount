@@ -24,12 +24,22 @@ public class AddTransactionHandler : IHandleMessages<AddTransactionCommand>
             throw new ArgumentNullException("Savings account cannot be negative");
         }
 
-        await _savingsAccountRepository.Update($"{message.BankName}-{message.AccountId}", savingsAccount =>
+        try
+        {
+            await _savingsAccountRepository.Update($"{message.BankName}-{message.AccountId}", savingsAccount =>
             {
                 if (message.TransactionType != null)
                     savingsAccount.AddTransaction(message.TransactionType, message.Amount);
                 return Task.CompletedTask;
             });
+            _logger.LogDebug($"Transaction {message.TransactionType} has been successfully added");
+        }
+
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, $"Transaction {message.TransactionType} has been failed because of {ex.Message}");
+        }
+       
     }
 
 }
