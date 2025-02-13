@@ -10,6 +10,9 @@ public class SavingsAccountAggregate : AggregateRoot
     public decimal Balance { get; private set; }
     public override string Id { get; set; }
 
+    // Private parameterless constructor (for event sourcing replay)
+    public SavingsAccountAggregate() { } 
+    
     public SavingsAccountAggregate(string? bankName, decimal balance, long bankId, long accountId)
     {
         if (string.IsNullOrEmpty(bankName))
@@ -39,7 +42,7 @@ public class SavingsAccountAggregate : AggregateRoot
             throw new InvalidDataException(amount + " can't be less than 0");
         }
         
-        RaiseEvent(new TransactionAdded($"{BankId}--{AccountId}", transactionType, amount, Version+1));
+        RaiseEvent(new TransactionAdded($"{BankId}--{AccountId}", transactionType, amount, Version+2));
     }
     public void When(SavingsAccountCreated @event)
     {

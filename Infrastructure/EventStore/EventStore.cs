@@ -133,15 +133,18 @@ public class EventStore : IEventStore
         ArgumentNullException.ThrowIfNull(events);
         ArgumentNullException.ThrowIfNull(streamName);
 
-        var eventArray = events.Select(@event => ToEventStoreEventData(@event, isLinkType)).ToArray();
-
         try
         {
+            var eventArray = events.Select(@event => ToEventStoreEventData(@event, isLinkType)).ToArray();
             await _eventStoreClient.AppendToStreamAsync(streamName, StreamState.Any, eventArray);
+        }
+        catch (DBConcurrencyException ex)
+        {
+            throw new DBConcurrencyException(ex.Message);
         }
         catch (Exception ex)
         {
-            throw new DBConcurrencyException(ex.Message);
+            _logger.LogError(ex, "Stream {Messgae} {stackTrace} failed to append to stream", ex.Message, ex.StackTrace);
         }
     }
 
