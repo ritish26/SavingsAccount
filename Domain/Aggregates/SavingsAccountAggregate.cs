@@ -42,7 +42,7 @@ public class SavingsAccountAggregate : AggregateRoot
             throw new InvalidDataException(amount + " can't be less than 0");
         }
         
-        RaiseEvent(new TransactionAdded($"{BankId}--{AccountId}", transactionType, amount, Version+2));
+        RaiseEvent(new TransactionAdded($"{BankId}-{AccountId}", transactionType, amount, Version+1));
     }
     public void When(SavingsAccountCreated @event)
     {
