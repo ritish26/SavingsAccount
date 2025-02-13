@@ -43,13 +43,22 @@ public class AggregateStore : IAggregateStore
 
         try
         {
-            var events = await _eventStore.ReadStream(streamName, startVersion, int.MaxValue);
-            aggregate??= Activator.CreateInstance<TAggregate>();
+            var events = await _eventStore.ReadStream(streamName,
+                startVersion, int.MaxValue);
+
+
+            aggregate ??= (TAggregate)Activator.CreateInstance(typeof(TAggregate), false);
             aggregate.ReplayEvents(events.Select(streamEvents => streamEvents.Event).ToList());
         }
+
         catch (StreamNotFoundException)
         {
             return null;
+        }
+
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, ex.Message);
         }
         
         return aggregate;
@@ -58,7 +67,9 @@ public class AggregateStore : IAggregateStore
     private async Task<TAggregate?> LoadSnapshot<TAggregate>(string aggregateId) where TAggregate : AggregateRoot
     {
         TAggregate? aggregate = null;
-        var streamName = $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}-{aggregateId}";
+        
+        var streamName =
+            $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}-{aggregateId}";
         
         try
         {
@@ -73,7 +84,7 @@ public class AggregateStore : IAggregateStore
 
         catch (StreamNotFoundException)
         {
-            throw new StreamNotFoundException(streamName);
+            aggregate = null;
         }
         
         return aggregate;

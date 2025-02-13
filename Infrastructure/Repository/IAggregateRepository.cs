@@ -9,7 +9,7 @@ public interface IAggregateRepository<TAggregate> where TAggregate : AggregateRo
 {
     Task Create(Func<Task<TAggregate>> createFunc);
     
-    Task Update(string aggregate, Func<TAggregate, Task> updateFunc);
+    Task Update(string aggregateId, Func<TAggregate, Task> updateFunc);
     
 }
 
