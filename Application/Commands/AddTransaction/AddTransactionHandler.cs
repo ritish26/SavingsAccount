@@ -5,7 +5,7 @@ namespace Application.Commands.AddTransaction;
 
 public class AddTransactionHandler : IHandleMessages<AddTransactionCommand>
 { 
-    private ILogger<AddTransactionHandler> _logger;
+    private readonly ILogger<AddTransactionHandler> _logger;
     private readonly ISavingsAccountRepository _savingsAccountRepository;
 
     public AddTransactionHandler(ILogger<AddTransactionHandler> logger,
@@ -21,7 +21,7 @@ public class AddTransactionHandler : IHandleMessages<AddTransactionCommand>
     {
         if (message.Amount < 0)
         {
-            throw new ArgumentNullException("Savings account cannot be negative");
+            throw new ArgumentNullException("Amount for transaction cannot be negative");
         }
 
         try
