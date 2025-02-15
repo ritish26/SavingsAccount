@@ -19,6 +19,14 @@ public class AddTransactionHandler : IHandleMessages<AddTransactionCommand>
 
     public async Task Handle(AddTransactionCommand message, IMessageHandlerContext context)
     {
+        var logContext = new Dictionary<string, object>()
+        {
+            { "CommandName", nameof(AddTransactionHandler) }
+        };
+        
+        using var scope = _logger.BeginScope(logContext);
+        _logger.LogInformation("Handling command add transaction");
+        
         if (message.Amount < 0)
         {
             throw new ArgumentNullException("Amount for transaction cannot be negative");
