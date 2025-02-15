@@ -40,7 +40,7 @@ public class AddTransactionHandler : IHandleMessages<AddTransactionCommand>
                     savingsAccount.AddTransaction(message.TransactionType, message.Amount);
                 return Task.CompletedTask;
             });
-            _logger.LogDebug($"Transaction {message.TransactionType} has been successfully added");
+            _logger.LogInformation($"Transaction {message.TransactionType} has been successfully added");
         }
 
         catch (Exception ex)
