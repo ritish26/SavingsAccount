@@ -32,7 +32,7 @@ public class SavingsAccountAggregate : AggregateRoot
             throw new InvalidDataException("Account can't be less than 0");
         }
 
-        RaiseEvent(new SavingsAccountCreated(bankName, bankId, accountId, balance, 0));
+        RaiseEvent(new SavingsAccountCreated(bankName, bankId, accountId, balance, 1));
     }
 
     public void AddTransaction(string transactionType, decimal amount)

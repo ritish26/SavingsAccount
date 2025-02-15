@@ -59,7 +59,7 @@ public abstract class AggregateRoot
     {
         foreach (var @event in domainEvents)
         {
-            if (@event != null) Apply(@event);
+            if (@event != null) Apply(@event,true);
         }
     }
 }

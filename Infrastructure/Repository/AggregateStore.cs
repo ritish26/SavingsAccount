@@ -20,7 +20,8 @@ public class AggregateStore : IAggregateStore
         _eventStore = eventStoreClient;
     }
 
-    public async Task<TAggregate?> Load<TAggregate>(string aggregateId, bool useSnapshot) where TAggregate : AggregateRoot
+    public async Task<TAggregate?> Load<TAggregate>(string aggregateId, bool useSnapshot) 
+        where TAggregate : AggregateRoot
     {
         var streamName =
             $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}-{aggregateId}";
@@ -131,7 +132,7 @@ public class AggregateStore : IAggregateStore
         await SaveSnapshot(aggregate);
     }
 
-    public async Task SaveSnapshot<TAggregate>(TAggregate aggregate, bool force=false) where TAggregate : AggregateRoot
+    private async Task SaveSnapshot<TAggregate>(TAggregate aggregate, bool force=false) where TAggregate : AggregateRoot
     {
         long? lastSnapshotVersion = null;
         if (!force)
