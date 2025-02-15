@@ -12,8 +12,6 @@ public  class StreamEvent
     }
     
     public BaseDomainEvent? Event { get; set; } 
-    
     public long EventNumber { get; set; }
-    
     public Dictionary<string, string> Metadata { get; set; }
 }

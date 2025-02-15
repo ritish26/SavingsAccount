@@ -14,11 +14,8 @@ public class SavingsAccountCreated : BaseDomainEvent
        Balance = balance;
     }
     public string? BankName { get;  set; }
-    
     public long BankId { get;  set; }
-    
     public long AccountId { get;  set; }
-    
     public decimal Balance { get;  set; }
 }
 
@@ -32,6 +29,5 @@ public class TransactionAdded : BaseDomainEvent
     }
     
     public string TransactionType { get;  set; }
-    
     public decimal Amount { get;  set; }
 }

@@ -10,8 +10,6 @@ public class EventData
     }
 
     public Guid EventId { get; }
-    
     public object Payload { get; set; }
-    
     public Dictionary<string, string> Metadata { get; set; }
 }

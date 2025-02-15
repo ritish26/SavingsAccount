@@ -7,7 +7,6 @@ public class CreateSavingsAccountRequest
     public long BankId { get; set; }
     
     public long AccountId { get; set; }
-    
     public decimal Balance { get; set; }
     
 }

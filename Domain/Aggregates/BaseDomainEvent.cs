@@ -10,10 +10,7 @@ public abstract class BaseDomainEvent
         OccuredOn = DateTime.UtcNow;
     }
     public string Id { get; set; }
-
     public string Type { get; set; }
-
     public long Version { get; set; }
-
     public DateTime OccuredOn { get; set; } 
 }

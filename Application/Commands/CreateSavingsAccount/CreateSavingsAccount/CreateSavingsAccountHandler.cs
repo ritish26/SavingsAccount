@@ -1,5 +1,4 @@
 using Domain.Aggregates;
-using Domain.Events;
 using Infrastructure.Repository;
 using Microsoft.Extensions.Logging;
 
