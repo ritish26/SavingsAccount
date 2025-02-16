@@ -3,6 +3,7 @@ using EventStore.Client;
 using Infrastructure.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using ES = Infrastructure.EventStore;
 namespace Infrastructure.Repository;
 
@@ -82,7 +83,8 @@ public class AggregateStore : IAggregateStore
 
             if (snapShotStreamCreated is SnapshotCreated snapshotCreated)
             {
-                aggregate = snapshotCreated.Aggregate as TAggregate;
+                string? json = snapshotCreated.Aggregate.ToString();
+                if (json != null) aggregate = JsonConvert.DeserializeObject<TAggregate>(json);
             }
         }
 
