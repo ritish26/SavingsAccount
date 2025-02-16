@@ -65,16 +65,19 @@ public class AggregateStore : IAggregateStore
         return aggregate;
     }
 
-    private async Task<TAggregate?> LoadSnapshot<TAggregate>(string aggregateId) where TAggregate : AggregateRoot
+    private async Task<TAggregate?> LoadSnapshot<TAggregate>(
+        string aggregateId) 
+        where TAggregate : AggregateRoot
     {
         TAggregate? aggregate = null;
         
         var streamName =
-            $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}-{aggregateId}";
+            $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}.snapshot-{aggregateId}";
         
         try
         {
-            var events = await _eventStore.ReadStream(streamName, -1, 1, Direction.Backwards);
+            var events = await _eventStore.ReadStream(
+                streamName, -1, 1, Direction.Backwards);
             var snapShotStreamCreated = events.FirstOrDefault()?.Event;
 
             if (snapShotStreamCreated is SnapshotCreated snapshotCreated)
@@ -132,7 +135,8 @@ public class AggregateStore : IAggregateStore
         await SaveSnapshot(aggregate);
     }
 
-    private async Task SaveSnapshot<TAggregate>(TAggregate aggregate, bool force=false) where TAggregate : AggregateRoot
+    private async Task SaveSnapshot<TAggregate>(TAggregate aggregate, bool force=false) 
+        where TAggregate : AggregateRoot
     {
         long? lastSnapshotVersion = null;
         if (!force)
@@ -147,7 +151,10 @@ public class AggregateStore : IAggregateStore
         if (force || aggregate.Version - (lastSnapshotVersion ?? 0) >= 3)
         {
             var snapShotEventData = ToeventData(new SnapshotCreated(aggregate, aggregate.Version));
-            var streamName = $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}.snapshot-{aggregate.Id}";
+            
+            var streamName 
+                = $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}.snapshot-{aggregate.Id}";
+          
             if (!await _eventStore.Exists(streamName))
             {
                 await _eventStore.CreateNewStream(streamName, new[] { snapShotEventData });
