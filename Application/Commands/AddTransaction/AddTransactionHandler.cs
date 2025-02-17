@@ -34,7 +34,7 @@ public class AddTransactionHandler : IHandleMessages<AddTransactionCommand>
 
         try
         {
-            await _savingsAccountRepository.Update($"{message.BankName}-{message.AccountId}", savingsAccount =>
+            await _savingsAccountRepository.Update($"{message.BankId}-{message.AccountId}", savingsAccount =>
             {
                 if (message.TransactionType != null)
                     savingsAccount.AddTransaction(message.TransactionType, message.Amount);

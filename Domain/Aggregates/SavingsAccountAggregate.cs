@@ -46,7 +46,7 @@ public class SavingsAccountAggregate : AggregateRoot
     }
     public void When(SavingsAccountCreated @event)
     {
-        Id = $"{@event.BankName}-{@event.AccountId}";
+        Id = $"{@event.BankId}-{@event.AccountId}";
         BankName = @event.BankName;
         BankId = @event.BankId;
         AccountId = @event.AccountId;
