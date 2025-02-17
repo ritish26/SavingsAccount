@@ -83,8 +83,8 @@ public class AggregateStore : IAggregateStore
 
             if (snapShotStreamCreated is SnapshotCreated snapshotCreated)
             {
-                string? json = snapshotCreated.Aggregate.ToString();
-                if (json != null) aggregate = JsonConvert.DeserializeObject<TAggregate>(json);
+                aggregate = snapshotCreated.Aggregate as TAggregate;
+                
             }
         }
 
