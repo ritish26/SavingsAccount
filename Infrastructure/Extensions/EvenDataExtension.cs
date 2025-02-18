@@ -38,26 +38,10 @@ public static class EventDataExtension
 
         foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
         {
-            try
+            Type? type = assembly.GetExportedTypes().FirstOrDefault(t => t.FullName == eventType);
+            if (type != null)
             {
-                Type? type = assembly.GetExportedTypes().FirstOrDefault(t => t.FullName == eventType);
-                if (type != null)
-                {
-                    return type;
-                }
-            }
-            catch (ReflectionTypeLoadException ex)
-            {
-                Console.WriteLine($"Failed to load types from assembly: {assembly.FullName}");
-                foreach (var loaderException in ex.LoaderExceptions)
-                {
-                    Console.WriteLine($"Loader Exception: {loaderException.Message}");
-                }
-                // Continue to next assembly instead of crashing
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Unexpected error loading types from {assembly.FullName}: {ex.Message}");
+                return type;
             }
         }
         return null;
