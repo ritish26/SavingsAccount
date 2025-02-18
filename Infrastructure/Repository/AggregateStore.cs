@@ -114,8 +114,8 @@ public class AggregateStore : IAggregateStore
 
         var eventsToWrite = changes.Select(ToeventData).ToList();
 
-        var streamName = $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}-{aggregate.Id}";
-
+        var streamName = $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}.{aggregate.Id}";
+        
         if (aggregateInitialVersion == 0)
         {
             // New Stream
@@ -154,7 +154,7 @@ public class AggregateStore : IAggregateStore
             var snapShotEventData = ToeventData(new SnapshotCreated(aggregate, aggregate.Version));
             
             var streamName 
-                = $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}.snapshot-{aggregate.Id}";
+                = $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}.snapshot.{aggregate.Id}";
           
             if (!await _eventStore.Exists(streamName))
             {
