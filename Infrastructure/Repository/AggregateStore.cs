@@ -3,7 +3,6 @@ using EventStore.Client;
 using Infrastructure.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 using ES = Infrastructure.EventStore;
 namespace Infrastructure.Repository;
 
@@ -25,7 +24,7 @@ public class AggregateStore : IAggregateStore
         where TAggregate : AggregateRoot
     {
         var streamName =
-            $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}-{aggregateId}";
+            $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}.{aggregateId}";
         
         if(!await _eventStore.Exists(streamName))
         {
@@ -73,7 +72,7 @@ public class AggregateStore : IAggregateStore
         TAggregate? aggregate = null;
         
         var streamName =
-            $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}.snapshot-{aggregateId}";
+            $"{_configuration.GetSection("EventStoreSettings:EventStoreStreamPrefix").Value}.snapshot.{aggregateId}";
         
         try
         {

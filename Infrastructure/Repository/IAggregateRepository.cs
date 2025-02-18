@@ -5,7 +5,8 @@ using Microsoft.Extensions.Logging;
 
 namespace Infrastructure.Repository;
 
-public interface IAggregateRepository<TAggregate> where TAggregate : AggregateRoot
+public interface IAggregateRepository<TAggregate> 
+    where TAggregate : AggregateRoot
 {
     Task Create(Func<Task<TAggregate>> createFunc);
     
