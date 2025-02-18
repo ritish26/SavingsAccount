@@ -25,11 +25,17 @@ public static class EventDataExtension
 
         if (type == null)
         {
-            throw new ArgumentException($"Event type {eventType} not found");
+            throw new ArgumentException($"Event type {eventType} not found or could not be resolved.");
         }
-        
-        return JsonConvert.DeserializeObject(eventData,type) as BaseDomainEvent;
-        
+
+        if (type.IsGenericTypeDefinition)
+        {
+            throw new InvalidOperationException($"Cannot deserialize generic type definition: {type.FullName}");
+        }
+
+        Console.WriteLine($"Deserializing event of type: {type.FullName}");
+
+        return JsonConvert.DeserializeObject(eventData, type) as BaseDomainEvent;
     }
 
     private static Type? GetTypeByEventType(string eventType)
