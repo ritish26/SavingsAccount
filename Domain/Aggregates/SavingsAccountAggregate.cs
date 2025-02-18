@@ -4,10 +4,10 @@ namespace Domain.Aggregates;
 
 public class SavingsAccountAggregate : AggregateRoot
 {
-    public string? BankName { get; private set; }
-    public long BankId { get; private set; }
-    public long AccountId { get; private set; }
-    public decimal Balance { get; private set; }
+    public string? BankName { get;  set; }
+    public long BankId { get;  set; }
+    public long AccountId { get;  set; }
+    public decimal Balance { get;  set; }
     public override string Id { get; set; }
 
     // Private parameterless constructor (for event sourcing replay)
