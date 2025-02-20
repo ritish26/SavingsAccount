@@ -38,6 +38,13 @@ public class ChangelogPartitionBackgroundService : BackgroundService
     private async Task DoWork(CancellationToken stoppingToken)
     {
         var checkPoint = await GetChangeLogCheckPoint();
+        
+        var changeLogProjectionName = 
+            $"{_configuration.GetSection("EventStoreSettings:ChangeLogProjectionName").Value}";
+        var streamObservable =
+            _eventStore.GetStreamObservable(changeLogProjectionName, Math.Max(checkPoint,0));
+        
+        
     }
 
     private async Task<long> GetChangeLogCheckPoint()

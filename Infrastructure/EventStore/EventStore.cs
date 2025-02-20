@@ -46,6 +46,20 @@ public class EventStore : IEventStore
         }
     }
 
+    public IObservable<ResolvedEvent> GetStreamObservable(string streamName, long fromVersion)
+    {
+        ArgumentNullException.ThrowIfNull(streamName);
+        
+        long? checkPoint = null;
+
+        if (fromVersion > 0)
+        {
+            checkPoint = fromVersion - 1;
+        }
+        
+        return new EventStoreGrpcStreamObservable(_eventStoreClient, streamName, checkPoint);
+    }
+
     public async Task<StreamEvent[]> ReadStream(string streamName, long fromVersion, int count,
         Direction direction = Direction.Forwards)
     {

@@ -16,4 +16,6 @@ public interface IEventStore
     
     Task<long> GetLastEventNumber(string streamName);
     
+    IObservable<ResolvedEvent> GetStreamObservable(string streamName, long fromVersion);
+    
 }
