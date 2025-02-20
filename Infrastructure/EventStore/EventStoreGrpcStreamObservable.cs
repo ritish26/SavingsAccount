@@ -43,6 +43,8 @@ public class EventStoreGrpcSubscription : IDisposable
         _streamName = streamName;
         _lastCheckpoint = lastCheckpoint;
         _observer = observer;
+        
+        InitAsync().GetAwaiter().GetResult();
     }
 
     private async Task InitAsync()
@@ -55,6 +57,7 @@ public class EventStoreGrpcSubscription : IDisposable
 
         _subscription = await _eventStoreClient.SubscribeToStreamAsync(_streamName, fromStream,
             OnEventArrived, true, OnsubscriptionDropped);
+        
     }
 
     private void OnsubscriptionDropped(StreamSubscription subscription, SubscriptionDroppedReason reason, Exception? exception)
