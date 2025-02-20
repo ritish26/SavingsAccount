@@ -1,3 +1,5 @@
+using System.Diagnostics;
+using System.Reactive.Linq;
 using Domain.Aggregates;
 using Domain.Events;
 using EventStore.Client;
@@ -43,8 +45,29 @@ public class ChangelogPartitionBackgroundService : BackgroundService
             $"{_configuration.GetSection("EventStoreSettings:ChangeLogProjectionName").Value}";
         var streamObservable =
             _eventStore.GetStreamObservable(changeLogProjectionName, Math.Max(checkPoint,0));
-        
-        
+
+        var lastEventProcessed = 0;
+        var eventsSinceLastCheckpoint = 0;
+        var lastCheckpointTime = DateTime.UtcNow;
+
+        streamObservable.Buffer(TimeSpan.FromMilliseconds(500), 5).Subscribe(resolvedEvents =>
+        {
+            if (stoppingToken.IsCancellationRequested)
+            {
+                _logger.LogInformation("Stream {StreamName} is cancelled due to Cancellation Token",
+                    changeLogProjectionName);
+                return;
+            }
+
+            var stopWatch = Stopwatch.StartNew();
+
+            if (resolvedEvents.Count > 0)
+            {
+               // HandleEvents(resolvedEvents).Wait(stoppingToken);
+            }
+
+        });
+
     }
 
     private async Task<long> GetChangeLogCheckPoint()
