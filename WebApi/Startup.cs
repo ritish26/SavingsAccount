@@ -1,6 +1,9 @@
 using System.Reflection;
+using Domain.Aggregates;
+using Infrastructure;
 using Infrastructure.EventStore;
 using Infrastructure.Extensions;
+using Infrastructure.Projections;
 using Infrastructure.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -29,6 +32,8 @@ public class Startup
     services.AddTransient<IAggregateStore, AggregateStore>();
     services.AddTransient<ISavingsAccountRepository, SavingsAccountRepository>();
     services.AddSingleton<IEventStore, Infrastructure.EventStore.EventStore>();
+    services.AddTransient<ITenantViewProjection, TenantViewProjection>();
+    services.AddHostedService<ChangelogPartitionBackgroundService>();
   }
   
   // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
