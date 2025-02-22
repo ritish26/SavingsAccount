@@ -20,7 +20,7 @@ public class TenantViewProjection : ITenantViewProjection
     }
     public async Task ProcessEvents(string tenantId)
     {
-        var grainCancellationTokenSource = new CancellationTokenSource();
+        var grainCancellationTokenSource = new GrainCancellationTokenSource();
         _hostApplicationLifetime.ApplicationStopping.Register(() =>
         {
             grainCancellationTokenSource.Cancel();
