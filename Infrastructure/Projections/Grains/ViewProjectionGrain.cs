@@ -101,7 +101,6 @@ public class ViewProjectionGrain : Grain, IViewProjectionGrain
             
         stopwatch.Stop();
         
-        
     }
 
 }
