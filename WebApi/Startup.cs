@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Projections;
 using SavingsAccount.Middleware;
 
 namespace SavingsAccount;
@@ -26,14 +27,14 @@ public class Startup
   {
     services.AddSingleton<CorrelationIdMiddleware>();
     services.AddEventStore(_configuration);
-    services.AddSwaggerGen();
-    services.AddControllers();
     services.AddAutoMapper(Assembly.Load("Application"));  //Load the automapper profiles from Application Project
     services.AddTransient<IAggregateStore, AggregateStore>();
     services.AddTransient<ISavingsAccountRepository, SavingsAccountRepository>();
     services.AddSingleton<IEventStore, Infrastructure.EventStore.EventStore>();
     services.AddTransient<ITenantViewProjection, TenantViewProjection>();
     services.AddHostedService<ChangelogPartitionBackgroundService>();
+    services.AddSwaggerGen();
+    services.AddControllers();
   }
   
   // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
