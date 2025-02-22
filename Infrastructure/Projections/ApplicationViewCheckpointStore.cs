@@ -8,10 +8,10 @@ namespace Infrastructure.Projections;
 public class ApplicationViewCheckpointStore : IProjectionCheckpointStore
 {
     private readonly ILogger<ApplicationViewCheckpointStore> _logger;
-    private readonly IMongoContext _mongoContext;
+    private readonly MongoContext _mongoContext;
 
     public ApplicationViewCheckpointStore(
-        ILogger<ApplicationViewCheckpointStore> logger, IMongoContext mongoContext)
+        ILogger<ApplicationViewCheckpointStore> logger, MongoContext mongoContext)
     {
         _logger = logger;
         _mongoContext = mongoContext;

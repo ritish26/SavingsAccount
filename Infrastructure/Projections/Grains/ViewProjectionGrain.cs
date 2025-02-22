@@ -18,8 +18,8 @@ public class ViewProjectionGrain : Grain, IViewProjectionGrain
     private readonly ILogger<ViewProjectionGrain> _logger;
     private readonly ITenantProjectionManagerFactory _tenantProjectionManagerFactory;
     private readonly IConfiguration _configuration;
-    private readonly IEventStore _eventStore;
     private readonly IProjectionCheckpointStore _projectionCheckpointStore;
+    private readonly IEventStore _eventStore;
     
     private ITenantProjectionManager _tenantProjectionManager;
     private long _tenantId;
