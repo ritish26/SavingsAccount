@@ -32,6 +32,7 @@ public class Startup
     services.AddTransient<ISavingsAccountRepository, SavingsAccountRepository>();
     services.AddSingleton<IEventStore, Infrastructure.EventStore.EventStore>();
     services.AddTransient<ITenantViewProjection, TenantViewProjection>();
+    services.AddTransient<IProjectionCheckpointStore, ApplicationViewCheckpointStore>();
     services.AddHostedService<ChangelogPartitionBackgroundService>();
     services.AddSwaggerGen();
     services.AddControllers();
