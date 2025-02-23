@@ -14,7 +14,7 @@ public class MongoContext : IMongoContext
 {
     private readonly IConfiguration _configuration;
     
-    private MongoClient _mongoClient { get; set;  }
+    private MongoClient MongoClient { get; set;  }
      
     private IMongoDatabase Database { get; set; }
 
@@ -31,7 +31,7 @@ public class MongoContext : IMongoContext
     }
     public IMongoCollection<T> GetCollection<T>()
     {
-        configureMongo();
+        ConfigureMongo();
 
         if (!CollectionTypeNameMap.ContainsKey(typeof(T)))
         {
@@ -41,20 +41,22 @@ public class MongoContext : IMongoContext
         return Database.GetCollection<T>(CollectionTypeNameMap[typeof(T)]);
     }
 
-    private void configureMongo()
+    private void ConfigureMongo()
     {
-        if (_mongoClient != null)
+        //Exit if mongo client is already initalized
+        if (MongoClient != null)
         {
             return;
         }
-
+        
+        // Register BSON class maps for serialization
         RegisterClassMap();
         var settings = MongoClientSettings.FromConnectionString(
             _configuration.GetSection("MongoDbSettings:ConnectionString").Value);
         
         //Configure mongo (you can inject the config just to simplify
-        MongoClient mongoClient = new MongoClient(settings);
-        Database = mongoClient.GetDatabase(_configuration.GetSection("MongoDbSettings:Database").Value);
+        MongoClient = new MongoClient(settings);
+        Database = MongoClient.GetDatabase(_configuration.GetSection("MongoDbSettings:Database").Value);
     }
 
     private void RegisterClassMap()
