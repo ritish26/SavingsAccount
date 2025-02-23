@@ -9,7 +9,9 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MongoDB.Driver;
 using Projections;
+using Projections.ViewBuilders;
 using SavingsAccount.Middleware;
 
 namespace SavingsAccount;
@@ -25,14 +27,22 @@ public class Startup
 
   public void ConfigureServices(IServiceCollection services)
   {
+    //Configure mongodb
+    var mongoSetting = _configuration.GetSection("MongoDBSettings:ConnectionString").Value;
+    var mongoClient = new MongoClient(mongoSetting);
+    services.AddSingleton<IMongoClient>(mongoClient);
     services.AddSingleton<CorrelationIdMiddleware>();
-    services.AddEventStore(_configuration);
-    services.AddAutoMapper(Assembly.Load("Application"));  //Load the automapper profiles from Application Project
+    services.AddEventStore(_configuration); 
     services.AddTransient<IAggregateStore, AggregateStore>();
     services.AddTransient<ISavingsAccountRepository, SavingsAccountRepository>();
     services.AddSingleton<IEventStore, Infrastructure.EventStore.EventStore>();
-    services.AddTransient<ITenantViewProjection, TenantViewProjection>();
+    services.AddAutoMapper(Assembly.Load("Application"));  //Load the automapper profiles from Application Project
+    services.AddSingleton<IMongoContext, MongoContext>();
+    services.AddTransient<SavingsAccountViewBuilder>();
+    services.AddTransient<IProjection, SavingsAccountProjection>();
     services.AddTransient<IProjectionCheckpointStore, ApplicationViewCheckpointStore>();
+    services.AddTransient<ITenantProjectionManagerFactory, TenantProjectionManagerFactory>();
+    services.AddTransient<ITenantViewProjection, TenantViewProjection>();
     services.AddHostedService<ChangelogPartitionBackgroundService>();
     services.AddSwaggerGen();
     services.AddControllers();
