@@ -8,7 +8,7 @@ public class SavingsAccountView : IViewDocument
     
     public long BankId { get; set; }
     
-    public string AccountId { get; set; }
+    public long AccountId { get; set; }
     
     public decimal Balance { get; set; }
     

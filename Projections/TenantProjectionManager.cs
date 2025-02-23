@@ -12,14 +12,14 @@ public class TenantProjectionManager : ITenantProjectionManager
     }
     public async Task HandleEvents(IReadOnlyList<StreamEvent> events, CancellationToken grainCancellationToken)
     {
-        if(events == null) throw new ArgumentNullException(nameof(events));
+        ArgumentNullException.ThrowIfNull(events);
 
         var streamEventsArray = events.ToList();
 
         foreach (var streamEvent in streamEventsArray)
         {
             await Task.WhenAll(_projections.Select(async projection =>
-                await projection.HandleEvents(new[] { streamEvent })));
+                await projection.HandleEvents([streamEvent])));
         }
     }
 }
