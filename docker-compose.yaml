@@ -19,3 +19,13 @@ services:
     ports:
       - "5341:80"
     restart: always
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    ports:
+      - "27017:27017"  # Expose MongoDB port for Compass
