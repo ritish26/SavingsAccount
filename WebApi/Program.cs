@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Events;
+using Orleans.Configuration;
 
 
 // This class is used to register the external services 
@@ -90,5 +91,36 @@ public class Program
 
         return endpointConfiguration;
     }
+    
+    //Configure Orleans
+    private static void ConfigureOrleans(HostBuilderContext hasContext,
+        ISiloBuilder siloBuilder)
+    {
+        var orleansConfiguration = hasContext.Configuration.GetSection("Orleans");
+        siloBuilder.UseLocalhostClustering().Configure<ClusterOptions>(options =>
+        {
+            options.ClusterId = "dev";
+            options.ServiceId = "OrleansBasics";
+        });
+
+        siloBuilder.UseAdoNetClustering(options =>
+        {
+            options.ConnectionString = orleansConfiguration.GetConnectionString("Orleans");
+            options.Invariant = "Npgsql";
+        }).UseAdoNetReminderService(options =>
+        {
+            options.ConnectionString = orleansConfiguration.GetConnectionString("Orleans");
+            options.Invariant = "Npgsql";
+        }).Configure<SiloMessagingOptions>(options =>
+        {
+            options.ResponseTimeout = TimeSpan.FromSeconds(2);
+        });
+
+        siloBuilder.UseDashboard(options =>
+        {
+            options.HostSelf = true;
+        });
+    }
+
     
 }
