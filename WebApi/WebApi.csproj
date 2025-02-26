@@ -45,6 +45,7 @@
 
     <ItemGroup>
       <Folder Include="logs\" />
+      <Folder Include="obj\Debug\" />
     </ItemGroup>
 
 </Project>
