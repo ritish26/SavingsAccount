@@ -106,11 +106,11 @@ public class Program
 
         siloBuilder.UseAdoNetClustering(options =>
         {
-            options.ConnectionString = orleansConfiguration.GetConnectionString("Orleans");
+            options.ConnectionString = orleansConfiguration["ConnectionString"];
             options.Invariant = "Npgsql";
         }).UseAdoNetReminderService(options =>
         {
-            options.ConnectionString = orleansConfiguration.GetConnectionString("Orleans");
+            options.ConnectionString = orleansConfiguration["ConnectionString"];
             options.Invariant = "Npgsql";
         }).Configure<SiloMessagingOptions>(options =>
         {
@@ -119,7 +119,7 @@ public class Program
 
         siloBuilder.UseDashboard(options =>
         {
-            options.HostSelf = true;
+            options.HostSelf = false;
         });
     }
 
