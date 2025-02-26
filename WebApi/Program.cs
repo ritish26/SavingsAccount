@@ -29,6 +29,7 @@ public class Program
             Log.Information("Starting web host");
             var hostBuilder = CreateHostBuilder(args);
             hostBuilder.UseNServiceBus(RegisterNServiceBus);
+            hostBuilder.UseOrleans(ConfigureOrleans);
             hostBuilder.Build().Run();
         }
 
