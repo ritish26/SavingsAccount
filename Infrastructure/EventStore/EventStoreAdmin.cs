@@ -18,9 +18,9 @@ public class EventStoreAdmin : IEventStoreAdmin
         _httpClient = client ?? throw new ArgumentNullException(nameof(client));
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         
-        var httpUri= configuration.GetSection("EventStore:HttpUri").Value;
-        var username = configuration.GetSection("EventStore:Username").Value;
-        var password = configuration.GetSection("EventStore:Password").Value;
+        var httpUri= configuration.GetSection("EventStoreSettings:HttpUri").Value;
+        var username = configuration.GetSection("EventStoreSettings:User").Value;
+        var password = configuration.GetSection("EventStoreSettings:Password").Value;
         
         var authenticationToken = Convert.ToBase64String(Encoding.UTF8.
             GetBytes($"{username}:{password}"));
@@ -54,8 +54,8 @@ public class EventStoreAdmin : IEventStoreAdmin
         var trackedStreamsValue = trackEmittedStreams ? "true" : "false";
 
         var requestUri =
-            $"/Projections/continuous?name={Uri.EscapeUriString(projectionName)}&)+" +
-            $"type=JS&enabled={enabledValue}&emit={emitValue}&trackedStreams={trackedStreamsValue}";
+            $"/projections/continuous?name={Uri.EscapeDataString(projectionName)}" +
+            $"&type=JS&enabled={enabledValue}&emit={emitValue}&trackemittedstreams={trackedStreamsValue}";
         
         _logger.LogDebug($"CreateContinuousProjection: requestUri={requestUri}");
         using var responseMessage = await _httpClient.PostAsync(requestUri, 
