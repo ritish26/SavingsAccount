@@ -19,7 +19,7 @@ public class TenantProjectionManager : ITenantProjectionManager
     /// </summary>
     /// <param name="events">List of stream events to process.</param>
     /// <param name="grainCancellationToken">Cancellation token for async operations.</param>
-    public async Task HandleEvents(IReadOnlyList<StreamEvent> events, CancellationToken grainCancellationToken)
+    public async Task HandleEvents(IReadOnlyList<StreamEvent> events, CancellationTokenSource grainCancellationToken)
     {
         ArgumentNullException.ThrowIfNull(events);
 

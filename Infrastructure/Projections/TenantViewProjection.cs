@@ -1,33 +1,45 @@
-using Infrastructure.Projections.Grains;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Orleans;
+using Infrastructure.Projections.Grains;
 
 namespace Infrastructure.Projections;
 
 public class TenantViewProjection : ITenantViewProjection
 {
     private readonly ILogger<TenantViewProjection> _logger;
-    private readonly IGrainFactory _grainFactory;
+    private readonly IViewProjectionGrain _viewProjectionService;
     private readonly IHostApplicationLifetime _hostApplicationLifetime;
-    
+
     public TenantViewProjection(ILogger<TenantViewProjection> logger,
-        IGrainFactory grainFactory, IHostApplicationLifetime applicationLifetime)
+        IViewProjectionGrain viewProjectionService, 
+        IHostApplicationLifetime applicationLifetime)
     {
         _logger = logger;
-        _grainFactory = grainFactory;
+        _viewProjectionService = viewProjectionService;
         _hostApplicationLifetime = applicationLifetime;
     }
+
     public async Task ProcessEvents(string tenantId)
     {
-        var grainCancellationTokenSource = new GrainCancellationTokenSource();
+        using var cts = new CancellationTokenSource();
+        
         _hostApplicationLifetime.ApplicationStopping.Register(() =>
         {
-            grainCancellationTokenSource.Cancel();
+            _logger.LogInformation("Application is stopping. Cancelling event processing.");
+            cts.Cancel();
         });
-        
-        var projectionGrain = _grainFactory.GetGrain<IViewProjectionGrain>(tenantId);
-        
-        await projectionGrain.ProcessEvents(grainCancellationTokenSource.Token);
+
+        try
+        {
+            await _viewProjectionService.ProcessEvents(cts);
+        }
+        catch (OperationCanceledException)
+        {
+            _logger.LogInformation("Event processing was canceled.");
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error processing events for tenant {TenantId}", tenantId);
+        }
     }
 }

@@ -3,17 +3,16 @@ using Domain.Events;
 using Infrastructure.EventStore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using Orleans;
 using Projections;
 
 namespace Infrastructure.Projections.Grains;
 
-public interface IViewProjectionGrain : IGrainWithStringKey
+public interface IViewProjectionGrain 
 {
-    Task ProcessEvents(GrainCancellationToken grainCancellationToken);
+    Task ProcessEvents(CancellationTokenSource grainCancellationToken);
 }
 
-public class ViewProjectionGrain : Grain, IViewProjectionGrain
+public class ViewProjectionGrain : IViewProjectionGrain
 {
     private readonly ILogger<ViewProjectionGrain> _logger;
     private readonly ITenantProjectionManagerFactory _tenantProjectionManagerFactory;
@@ -36,22 +35,8 @@ public class ViewProjectionGrain : Grain, IViewProjectionGrain
         _eventStore = eventStore;
         _projectionCheckpointStore = projectionCheckpointStore;
     }
-
-    public override async Task OnActivateAsync(CancellationToken cancellationToken)
-    {
-        var primaryKey = this.GetPrimaryKeyString();
-
-        if (!long.TryParse(primaryKey, out var tenantId))
-        {
-            throw new ArgumentException("IssuerId is invalid, Cannot Process events");
-        }
-
-        _tenantProjectionManager = _tenantProjectionManagerFactory.Create(tenantId);
-        _tenantId = tenantId;
-        
-        await base.OnActivateAsync(cancellationToken);
-    }
-    public async Task ProcessEvents(GrainCancellationToken grainCancellationToken)
+    
+    public async Task ProcessEvents(CancellationTokenSource grainCancellationToken)
     {
         var streamName =
             $"{_configuration.GetSection("EventsStoreSettings:ChangeLogProjectionName").Value}.{_tenantId}";
@@ -88,7 +73,7 @@ public class ViewProjectionGrain : Grain, IViewProjectionGrain
             }
 
             await _tenantProjectionManager.HandleEvents(
-                currentSlice, grainCancellationToken.CancellationToken);
+                currentSlice, grainCancellationToken);
 
             lastEventProcessed = currentSlice.Max(streamEvent => streamEvent.EventNumber);
 
@@ -97,7 +82,7 @@ public class ViewProjectionGrain : Grain, IViewProjectionGrain
             eventsProcessed += currentSlice.Length;
 
         } while (lastEventProcessed < maxEventNumber && stopwatch.ElapsedMilliseconds < 360_000 &&
-                 !grainCancellationToken.CancellationToken.IsCancellationRequested);
+                 !grainCancellationToken.IsCancellationRequested);
             
         stopwatch.Stop();
         

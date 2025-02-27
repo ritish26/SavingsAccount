@@ -29,7 +29,7 @@ public class Program
             Log.Information("Starting web host");
             var hostBuilder = CreateHostBuilder(args);
             hostBuilder.UseNServiceBus(RegisterNServiceBus);
-            hostBuilder.UseOrleans(ConfigureOrleans);
+            //hostBuilder.UseOrleans(ConfigureOrleans);
             hostBuilder.Build().Run();
         }
 
@@ -94,7 +94,7 @@ public class Program
     }
     
     //Configure Orleans
-    private static void ConfigureOrleans(HostBuilderContext hasContext,
+    /*private static void ConfigureOrleans(HostBuilderContext hasContext,
         ISiloBuilder siloBuilder)
     {
         var orleansConfiguration = hasContext.Configuration.GetSection("Orleans");
@@ -121,7 +121,7 @@ public class Program
         {
             options.HostSelf = false;
         });
-    }
+    }*/
 
     
 }

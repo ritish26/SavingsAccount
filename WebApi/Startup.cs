@@ -4,6 +4,7 @@ using Infrastructure;
 using Infrastructure.EventStore;
 using Infrastructure.Extensions;
 using Infrastructure.Projections;
+using Infrastructure.Projections.Grains;
 using Infrastructure.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -43,6 +44,7 @@ public class Startup
     services.AddTransient<IProjectionCheckpointStore, ApplicationViewCheckpointStore>();
     services.AddTransient<ITenantProjectionManagerFactory, TenantProjectionManagerFactory>();
     services.AddTransient<ITenantViewProjection, TenantViewProjection>();
+    services.AddTransient<IViewProjectionGrain, ViewProjectionGrain>();
     services.AddHostedService<ChangelogPartitionBackgroundService>();
     services.AddSwaggerGen();
     services.AddControllers();
