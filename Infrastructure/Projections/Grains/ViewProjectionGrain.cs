@@ -14,8 +14,6 @@ public interface IViewProjectionGrain
 
 public class ViewProjectionGrain : IViewProjectionGrain
 {
-    private readonly ILogger<ViewProjectionGrain> _logger;
-    private readonly ITenantProjectionManagerFactory _tenantProjectionManagerFactory;
     private readonly IConfiguration _configuration;
     private readonly IProjectionCheckpointStore _projectionCheckpointStore;
     private readonly IEventStore _eventStore;
@@ -29,8 +27,6 @@ public class ViewProjectionGrain : IViewProjectionGrain
         IEventStore eventStore,
         IProjectionCheckpointStore projectionCheckpointStore)
     {
-        _logger = logger;
-        _tenantProjectionManagerFactory = tenantProjectionManagerFactory;
         _configuration = configuration;
         _eventStore = eventStore;
         _projectionCheckpointStore = projectionCheckpointStore;
