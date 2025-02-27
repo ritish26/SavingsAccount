@@ -46,6 +46,7 @@ public class Startup
     services.AddTransient<ITenantViewProjection, TenantViewProjection>();
     services.AddTransient<IViewProjectionGrain, ViewProjectionGrain>();
     services.AddHostedService<ChangelogPartitionBackgroundService>();
+    services.AddHttpClient<IEventStoreAdmin, EventStoreAdmin>();
     services.AddSwaggerGen();
     services.AddControllers();
   }
