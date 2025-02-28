@@ -125,7 +125,7 @@ public class ChangelogPartitionBackgroundService : BackgroundService
 
         foreach (var @event in resolvedEvents)
         {
-            var tenantId = @event.Event.EventStreamId.Split(".")[2].Split("_")[0];
+            var tenantId = @event.Event.EventStreamId.Split(".")[2].Split("-")[0];
 
             if (string.IsNullOrEmpty(tenantId))
             {
@@ -160,7 +160,7 @@ public class ChangelogPartitionBackgroundService : BackgroundService
     {
         ArgumentNullException.ThrowIfNull(tenantId);
 
-        if (resolvedEvents != null && resolvedEvents.Any())
+        if (resolvedEvents != null && !resolvedEvents.Any())
         {
             return;
         }
