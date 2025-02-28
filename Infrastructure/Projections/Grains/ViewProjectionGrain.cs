@@ -8,7 +8,7 @@ namespace Infrastructure.Projections.Grains;
 
 public interface IViewProjectionGrain 
 {
-    Task ProcessEvents(CancellationTokenSource grainCancellationToken);
+    Task ProcessEvents(CancellationTokenSource grainCancellationToken, string tenantId);
 }
 
 public class ViewProjectionGrain : IViewProjectionGrain
@@ -31,10 +31,9 @@ public class ViewProjectionGrain : IViewProjectionGrain
         _projectionCheckpointStore = projectionCheckpointStore;
     }
     
-    public async Task ProcessEvents(CancellationTokenSource grainCancellationToken)
+    public async Task ProcessEvents(CancellationTokenSource grainCancellationToken, string tenantId)
     {
-        //hardCoding this as of now.
-        _tenantId = 10;
+        _tenantId = long.Parse(tenantId);
         var streamName =
             $"{_configuration.GetSection("EventStoreSettings:ChangeLogProjectionName").Value}.{_tenantId}";
 

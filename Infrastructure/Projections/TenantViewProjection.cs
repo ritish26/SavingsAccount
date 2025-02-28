@@ -31,7 +31,7 @@ public class TenantViewProjection : ITenantViewProjection
 
         try
         {
-            await _viewProjectionService.ProcessEvents(cts);
+            await _viewProjectionService.ProcessEvents(cts,tenantId);
         }
         catch (OperationCanceledException)
         {

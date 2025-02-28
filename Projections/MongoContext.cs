@@ -56,7 +56,7 @@ public class MongoContext : IMongoContext
         
         //Configure mongo (you can inject the config just to simplify
         MongoClient = new MongoClient(settings);
-        Database = MongoClient.GetDatabase(_configuration.GetSection("MongoDbSettings:Database").Value);
+        Database = MongoClient.GetDatabase(_configuration.GetSection("MongoDbSettings:DatabaseName").Value);
     }
 
     private void RegisterClassMap()
