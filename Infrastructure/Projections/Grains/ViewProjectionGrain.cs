@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using Domain.Events;
 using Infrastructure.EventStore;
-using Microsoft.Extensions.Configuration;;
+using Microsoft.Extensions.Configuration;
 using Projections;
 
 namespace Infrastructure.Projections.Grains;
