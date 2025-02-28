@@ -24,12 +24,9 @@ services:
     image: mongo
     container_name: mongo
     restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
     ports:
-      - "27017:27017"  # Expose MongoDB port for Compass
-
+      - "27017:27017"  # Expose MongoDB port
+    command: ["--bind_ip_all", "--noauth"]  # Allow direct connections without authentication
   db:
     container_name: postgres_container
     image: postgres
