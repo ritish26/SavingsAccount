@@ -1,8 +1,7 @@
 using System.Diagnostics;
 using Domain.Events;
 using Infrastructure.EventStore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Configuration;;
 using Projections;
 
 namespace Infrastructure.Projections.Grains;
@@ -21,11 +20,11 @@ public class ViewProjectionGrain : IViewProjectionGrain
     private ITenantProjectionManager _tenantProjectionManager;
     private long _tenantId;
 
-    public ViewProjectionGrain(ILogger<ViewProjectionGrain> logger,
-        ITenantProjectionManagerFactory tenantProjectionManagerFactory,
+    public ViewProjectionGrain(
         IConfiguration configuration,
         IEventStore eventStore,
-        IProjectionCheckpointStore projectionCheckpointStore)
+        IProjectionCheckpointStore projectionCheckpointStore
+        )
     {
         _configuration = configuration;
         _eventStore = eventStore;
@@ -34,8 +33,10 @@ public class ViewProjectionGrain : IViewProjectionGrain
     
     public async Task ProcessEvents(CancellationTokenSource grainCancellationToken)
     {
+        //hardCoding this as of now.
+        _tenantId = 10;
         var streamName =
-            $"{_configuration.GetSection("EventsStoreSettings:ChangeLogProjectionName").Value}.{_tenantId}";
+            $"{_configuration.GetSection("EventStoreSettings:ChangeLogProjectionName").Value}.{_tenantId}";
 
         StreamEvent[] currentSlice;
         
