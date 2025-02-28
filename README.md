@@ -31,3 +31,10 @@ Projection Flow
 	These events are then processed and sent to the projection system, where they are mapped from EventStoreDB to MongoDB.
 	We maintain a checkpoint of the last processed event to ensure efficient event processing and prevent duplication.
 3.	The projection process updates MongoDB with the latest state, ensuring that all data is synchronized and query-optimized.
+
+Tracing and Logging
+
+We use the concept of middleware with a Correlation ID to trace all requests throughout the system.
+•	Every incoming request is assigned a Correlation ID, which helps in tracking the entire request flow across different services.
+•	This ensures better observability and debugging by linking logs to specific requests.
+•	The log state is also captured, allowing us to analyze system behavior and troubleshoot issues efficiently.
