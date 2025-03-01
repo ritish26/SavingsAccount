@@ -27,10 +27,13 @@ Project Flow
 Projection Flow
 1.	We run a background service that listens to the event stream(ChangeLog) we have subscribed to in EventStoreDB.
 	When EventStoreDB publishes an event, the background service listens for it and pushes it to a (changeLog) stream.
-2.	From the change log stream, the events are transferred to the tenant log stream(changeLogTenantStream), which contains tenant-specific events.
+2.  We use the Observer Design Pattern to subscribe to EventStoreDB and monitor it for any new incoming events.
+3.  From the change log stream, the events are transferred to the tenant log stream(changeLogTenantStream), which contains tenant-specific events.
 	These events are then processed and sent to the projection system, where they are mapped from EventStoreDB to MongoDB.
 	We maintain a checkpoint of the last processed event to ensure efficient event processing and prevent duplication.
-3.	The projection process updates MongoDB with the latest state, ensuring that all data is synchronized and query-optimized.
+4.  We used concept of ViewBuilder. ViewBuilder manages projections by retrieving, modifying, and 
+    maintaining consistent read models in a CQRS/Event Sourcing system. 
+5.  The projection process updates MongoDB with the latest state, ensuring that all data is synchronized and query-optimized.
 
 Tracing and Logging
 

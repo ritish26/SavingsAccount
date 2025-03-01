@@ -37,7 +37,7 @@ public class ViewBuilder<T> where T : IViewDocument
     }
 
     /// <summary>
-    /// Called after data is set. Can be used to initalize defaults on the data
+    /// Called after data is set. Can be used to initialize defaults on the data
     /// </summary>
     /// <exception cref="NotImplementedException"></exception>
     protected virtual void InitData()
