@@ -10,10 +10,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3f1b4dd-7b4d-4ea7-b1fb-d835c8ae936e" name="Changes" comment="Code Fixes to identify tenant">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SavingsAccount/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SavingsAccount/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Repository/AggregateStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Repository/AggregateStore.cs" afterDir="false" />
+    <list default="true" id="c3f1b4dd-7b4d-4ea7-b1fb-d835c8ae936e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SavingsAccount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SavingsAccount/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SavingsAccount.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/SavingsAccount.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,106 +39,49 @@
     &quot;assignee&quot;: &quot;ritish26&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ritish26/SavingsAccount.git&quot;,
-    &quot;accountId&quot;: &quot;55d2700b-154a-4cef-b2ab-2da17e7d7c11&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://ritish26: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@github.com/ritish26/SavingsAccount.git",
+    "accountId": "55d2700b-154a-4cef-b2ab-2da17e7d7c11"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionCommand.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Application/Commands/AddTransaction/AddTransactionCommand.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionCommand.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionCommand.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionCommand.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionCommand.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionCommand.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionCommand.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/AddTransaction/AddTransactionHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/CreateSavingsAccount/CreateSavingsAccount/CreateSavingsAccountHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/CreateSavingsAccount/CreateSavingsAccount/CreateSavingsAccountHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/CreateSavingsAccount/CreateSavingsAccount/CreateSavingsAccountHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/CreateSavingsAccount/CreateSavingsAccount/CreateSavingsAccountHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Commands/CreateSavingsAccount/CreateSavingsAccount/CreateSavingsAccountHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Requests/AddTransactionRequest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Application/Requests/AddTransactionRequest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Requests/AddTransactionRequest.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Application/Requests/CreateSavingsAccountRequest.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/AggregateRoot.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/AggregateRoot.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/AggregateRoot.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/AggregateRoot.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/AggregateRoot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/BaseDomainEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/SavingsAccountAggregate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/SavingsAccountAggregate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/SavingsAccountAggregate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/SavingsAccountAggregate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/SavingsAccountAggregate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/SavingsAccountAggregate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/SavingsAccountAggregate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/SavingsAccountAggregate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/SavingsAccountAggregate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/SavingsAccountAggregate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/SavingsAccountAggregate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Aggregates/SavingsAccountAggregate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Events/SavingsAccount.event.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Events/SavingsAccount.event.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Events/SavingsAccount.event.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Events/SavingsAccount.event.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Events/SavingsAccount.event.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Events/StreamEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Events/StreamEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Events/StreamEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Domain/Events/StreamEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/EventStore/EventData.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/EventStore/EventStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/EventStore/EventStore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/EventStore/EventStore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/EventStore/EventStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/EventStore/EventStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/EventStore/EventStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/EventStore/EventStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/EventStore/EventStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/EventStore/EventStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/EventStore/EventStore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/EventStore/EventStoreAdmin.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/EventStore/EventStoreGrpcStreamObservable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/EventStore/IEventStore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/EventStore/IEventStore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/EventStore/IEventStore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Extensions/EvenDataExtension.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Extensions/EvenDataExtension.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Extensions/EvenDataExtension.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Extensions/EvenDataExtension.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Extensions/EvenDataExtension.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Extensions/EvenDataExtension.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Extensions/EvenDataExtension.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Extensions/EvenDataExtension.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Extensions/EvenDataExtension.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Extensions/EvenDataExtension.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/ApplicationViewCheckpointStore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/ApplicationViewCheckpointStore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/ApplicationViewCheckpointStore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/ChangelogPartitionBackgroundService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/ChangelogPartitionBackgroundService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/ChangelogPartitionBackgroundService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/ChangelogPartitionBackgroundService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/ChangelogPartitionBackgroundService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/Grains/ViewProjectionGrain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/Grains/ViewProjectionGrain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/Grains/ViewProjectionGrain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/Grains/ViewProjectionGrain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/Grains/ViewProjectionGrain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/Grains/ViewProjectionGrain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/Grains/ViewProjectionGrain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/Grains/ViewProjectionGrain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/TenantViewProjection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/TenantViewProjection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/TenantViewProjection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/TenantViewProjection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Projections/TenantViewProjection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
@@ -149,38 +90,57 @@
     <setting file="file://$PROJECT_DIR$/Infrastructure/Repository/AggregateStore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/AggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/IAggregateRepository.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/IAggregateRepository.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/IAggregateRepository.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/IAggregateRepository.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/IAggregateRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Infrastructure/Repository/IAggregateStore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Repository/IAggregateStore.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Controllers/SavingsAccountController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Controllers/SavingsAccountController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Controllers/SavingsAccountController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Controllers/SavingsAccountController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Projections/ITenantProjectionManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Projections/MongoContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Projections/MongoContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Projections/MongoProjection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Projections/MongoProjection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Projections/MongoProjection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Projections/TenantProjectionManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Projections/TenantProjectionManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Projections/TenantProjectionManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/Projections/ViewBuilders/ViewBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApi/Controllers/SavingsAccountController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Controllers/SavingsAccountController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Controllers/SavingsAccountController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Controllers/SetupController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Startup.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/125a6f6ba9894cd5a12f9ecb840ab9063e400/c1/a3ca98fc/EventStoreClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/ritikdhiman/Desktop/Code/SavingsAccount/WebApi/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApi/obj/Debug/net8.0/WebApi.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/056a86bd38df47ca9bf3db3a439df974256e00/1b/8dfcda53/MongoClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/125a6f6ba9894cd5a12f9ecb840ab9063e400/c1/a3ca98fc/EventStoreClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1d94cfcdca8c4744a672e2f649393dc55308/dd/c9dfcb31/EnvironmentVariablesExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4dadf7f7cc614776914a2461b918f34fb3200/7b/458f140b/ThrowHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4dadf7f7cc614776914a2461b918f34fb3200/91/32cacfb2/Enumerable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5fa4ad73dc114186935bd5cb6b89281731a00/f6/a816f01c/DefaultTypedHttpClientFactory`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5fa4ad73dc114186935bd5cb6b89281731a00/fd/e050c28e/HttpClientBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/601729c7d50a4bbbbf66511e91d8dc6b12f620/64/b054de7b/OrleansSiloGenericHostExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6d2342c247c64eb7a9b3702e481e4443f83e00/1c/a3da3d3e/MethodBaseInvoker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6d2342c247c64eb7a9b3702e481e4443f83e00/4f/1150318f/StackFrameIterator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6d2342c247c64eb7a9b3702e481e4443f83e00/91/c0dfefaa/RuntimeType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6d2342c247c64eb7a9b3702e481e4443f83e00/c5/bb5734e3/Task.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7222c5a8263b4a05b4d65be9c65312402f200/4f/0c061980/StreamState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7222c5a8263b4a05b4d65be9c65312402f200/c6/d15050a1/WrongExpectedVersionException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7222c5a8263b4a05b4d65be9c65312402f200/ce/6bd4f59d/EventRecord.cs" root0="FORCE_HIGHLIGHTING" />
@@ -192,8 +152,18 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a066b61dd01a440cb5622a632b1409b17a600/47/f9ba9bfd/WebHostBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a105b4a31e844e8895058fb1b02b9bc8219600/a5/c4ae8230/ActionMethodExecutor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bb18da00de01415385dbf030596038d5218600/d4/bfd806b8/ActionMethodExecutor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c1b787e941d54ef485d5a503c4ad2d87148450/02/81bdfb68/Sink`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c1b787e941d54ef485d5a503c4ad2d87148450/50/f6e81bc9/AnonymousSafeObserver`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c1b787e941d54ef485d5a503c4ad2d87148450/5b/1763aee7/ObservableExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c1b787e941d54ef485d5a503c4ad2d87148450/7a/ef4c024d/Buffer`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c1b787e941d54ef485d5a503c4ad2d87148450/fc/34c179ff/SafeObserver`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cf9220470d6e439ba5f5b536fa8c2fd26f18/cc/f70f8fbd/IConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e28ee53075854ee59123996deedd0cf13f18/85/6e3753e5/IServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f0ae7fbae9414077b86cb5d2df5b29fd47830/87/20f67dcc/GrainCancellationTokenSource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f0ae7fbae9414077b86cb5d2df5b29fd47830/af/7d563a60/Grain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1a31a0eae304bfb851c4cd5b6037a1cca718/7c/375788c6/IObservable`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1a31a0eae304bfb851c4cd5b6037a1cca718/91/12de14c3/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1a31a0eae304bfb851c4cd5b6037a1cca718/91/51297d3f/InvalidOperationException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f96aa99111ac436ea82300a63eb0407a7f20/9b/7db4a832/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/86f0afcc364347a3825c16d4c9a063b91400/e5/9f736d75/System.Web.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/94be7199ed084f80a0ad862a589f8f513600/f3/694d2307/System.Data.cs" root0="SKIP_HIGHLIGHTING" />
@@ -219,24 +189,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.SavingsAccount.executor&quot;: &quot;Run&quot;,
-    &quot;ATTACH_DIALOG_SELECTED_CONTAINER&quot;: &quot;eventstore&quot;,
-    &quot;Docker.Docker Image (1).executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Docker Image.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yaml.eventstore: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.SavingsAccount.executor": "Debug",
+    "ATTACH_DIALOG_SELECTED_CONTAINER": "eventstore",
+    "Docker.Docker Image (1).executor": "Run",
+    "Docker.Docker Image.executor": "Run",
+    "Docker.docker-compose.yaml.eventstore: Compose Deployment.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CidrLocalAttachDebugger.recentlyUsed">
       <recent name="com.jetbrains.rider.cpp.debugger.RiderCppLLDBDriverConfiguration" />
@@ -355,86 +326,7 @@
       <workItem from="1736271566486" duration="97443000" />
       <workItem from="1739011252290" duration="12913000" />
       <workItem from="1739044648890" duration="2596000" />
-    </task>
-    <task id="LOCAL-00001" summary="Added New command to add tranactions">
-      <option name="closed" value="true" />
-      <created>1739212477728</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1739212477729</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Removed one condition which is not requried">
-      <option name="closed" value="true" />
-      <created>1739213426692</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1739213426692</updated>
-    </task>
-    <task id="LOCAL-00003" summary="New event added">
-      <option name="closed" value="true" />
-      <created>1739213792399</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1739213792399</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added command handler for new transaction added">
-      <option name="closed" value="true" />
-      <created>1739214465361</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1739214465361</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Removed code and added code">
-      <option name="closed" value="true" />
-      <created>1739214772957</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1739214772957</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Modified code">
-      <option name="closed" value="true" />
-      <created>1739215088611</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1739215088611</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Fix: Events were created two times">
-      <option name="closed" value="true" />
-      <created>1739215520483</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1739215520483</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Fixes : AddTransaction">
-      <option name="closed" value="true" />
-      <created>1739297879871</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1739297879871</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Fixes - Transaction API added">
-      <option name="closed" value="true" />
-      <created>1739299050434</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1739299050434</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Fixed: Event Name is not coming correctly">
-      <option name="closed" value="true" />
-      <created>1739382800697</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1739382800697</updated>
+      <workItem from="1740813788765" duration="186000" />
     </task>
     <task id="LOCAL-00011" summary="Added minor fixes">
       <option name="closed" value="true" />
@@ -564,7 +456,271 @@
       <option name="project" value="LOCAL" />
       <updated>1739812805951</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Code changes">
+      <option name="closed" value="true" />
+      <created>1740078913013</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1740078913013</updated>
+    </task>
+    <task id="LOCAL-00028" summary="ChangelogPartitionBackgroundService.cs Code added">
+      <option name="closed" value="true" />
+      <created>1740159015379</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1740159015379</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Code Changes">
+      <option name="closed" value="true" />
+      <created>1740167469073</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1740167469073</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Code changes">
+      <option name="closed" value="true" />
+      <created>1740167484904</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1740167484904</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Added code for projection infrastructure">
+      <option name="closed" value="true" />
+      <created>1740212042018</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1740212042018</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Commit project">
+      <option name="closed" value="true" />
+      <created>1740212051733</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1740212051733</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Code change for Infra layer projections">
+      <option name="closed" value="true" />
+      <created>1740214137725</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1740214137725</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Projections Project added">
+      <option name="closed" value="true" />
+      <created>1740214177017</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1740214177017</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Fixed formatting issue">
+      <option name="closed" value="true" />
+      <created>1740221040606</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1740221040606</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Register a service">
+      <option name="closed" value="true" />
+      <created>1740221673620</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1740221673620</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Added mongo related changes">
+      <option name="closed" value="true" />
+      <created>1740231046549</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1740231046549</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Code changes related to viewBuilder and View and mongo">
+      <option name="closed" value="true" />
+      <created>1740297447878</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1740297447878</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Minor code fixes">
+      <option name="closed" value="true" />
+      <created>1740304316824</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1740304316824</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Added comments in TenantProjectionManager.cs">
+      <option name="closed" value="true" />
+      <created>1740304769521</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1740304769521</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Configure mongo">
+      <option name="closed" value="true" />
+      <created>1740313322174</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1740313322174</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Configure Orleans">
+      <option name="closed" value="true" />
+      <created>1740510044932</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1740510044932</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Configure Postgrsql">
+      <option name="closed" value="true" />
+      <created>1740600355973</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1740600355973</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Register Orleans">
+      <option name="closed" value="true" />
+      <created>1740600371359</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1740600371359</updated>
+    </task>
+    <task id="LOCAL-00045" summary="upgrade to .NET 9">
+      <option name="closed" value="true" />
+      <created>1740601004625</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1740601004625</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Code fixes">
+      <option name="closed" value="true" />
+      <created>1740601599611</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1740601599611</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Orleans Removed">
+      <option name="closed" value="true" />
+      <created>1740678769308</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1740678769308</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Code cleanup">
+      <option name="closed" value="true" />
+      <created>1740678841636</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1740678841636</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Implemented Projection Code">
+      <option name="closed" value="true" />
+      <created>1740681284178</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1740681284178</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Projection code fix">
+      <option name="closed" value="true" />
+      <created>1740682443715</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1740682443716</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Code Fix">
+      <option name="closed" value="true" />
+      <created>1740765721200</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1740765721200</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Hard Code value for testing purpose">
+      <option name="closed" value="true" />
+      <created>1740769574923</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1740769574924</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Code fix">
+      <option name="closed" value="true" />
+      <created>1740769606485</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1740769606485</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Modified docker file">
+      <option name="closed" value="true" />
+      <created>1740770772494</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1740770772494</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Code Fixes">
+      <option name="closed" value="true" />
+      <created>1740771204170</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1740771204170</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Updated README.md">
+      <option name="closed" value="true" />
+      <created>1740772906648</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1740772906648</updated>
+    </task>
+    <task id="LOCAL-00057" summary="updated README.md file">
+      <option name="closed" value="true" />
+      <created>1740773024513</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1740773024513</updated>
+    </task>
+    <task id="LOCAL-00058" summary="updated README.md file">
+      <option name="closed" value="true" />
+      <created>1740812228852</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1740812228852</updated>
+    </task>
+    <task id="LOCAL-00059" summary="updated some documentation files">
+      <option name="closed" value="true" />
+      <created>1740813705744</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1740813705744</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,85 +741,243 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added New command to add tranactions" />
-    <MESSAGE value="Removed one condition which is not requried" />
-    <MESSAGE value="New event added" />
-    <MESSAGE value="Added command handler for new transaction added" />
-    <MESSAGE value="Removed code and added code" />
-    <MESSAGE value="Modified code" />
-    <MESSAGE value="Fix: Events were created two times" />
-    <MESSAGE value="Fixes : AddTransaction" />
-    <MESSAGE value="Fixes - Transaction API added" />
-    <MESSAGE value="Fixed: Event Name is not coming correctly" />
-    <MESSAGE value="Added minor fixes" />
-    <MESSAGE value="Modified code so that It will pick correct assembly" />
-    <MESSAGE value="Code Refactor" />
-    <MESSAGE value="Added try catch block" />
-    <MESSAGE value="Fixed bugs" />
+    <MESSAGE value="Projections Project added" />
+    <MESSAGE value="Fixed formatting issue" />
+    <MESSAGE value="Register a service" />
+    <MESSAGE value="Added mongo related changes" />
+    <MESSAGE value="Code changes related to viewBuilder and View and mongo" />
+    <MESSAGE value="Minor code fixes" />
+    <MESSAGE value="Added comments in TenantProjectionManager.cs" />
+    <MESSAGE value="Configure mongo" />
+    <MESSAGE value="Configure Orleans" />
+    <MESSAGE value="Configure Postgrsql" />
+    <MESSAGE value="Register Orleans" />
+    <MESSAGE value="upgrade to .NET 9" />
+    <MESSAGE value="Code fixes" />
+    <MESSAGE value="Orleans Removed" />
+    <MESSAGE value="Code cleanup" />
+    <MESSAGE value="Implemented Projection Code" />
+    <MESSAGE value="Projection code fix" />
+    <MESSAGE value="Code Fix" />
+    <MESSAGE value="Hard Code value for testing purpose" />
     <MESSAGE value="Code fix" />
-    <MESSAGE value="Bug Fixes" />
-    <MESSAGE value="Added logContext in commandHandler" />
-    <MESSAGE value="Implemented middleware" />
-    <MESSAGE value="Code Clean up" />
-    <MESSAGE value="Format So that we can read properly" />
-    <MESSAGE value="Fix bugs" />
-    <MESSAGE value="Code Fixes to identify tenant" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code Fixes to identify tenant" />
+    <MESSAGE value="Modified docker file" />
+    <MESSAGE value="Code Fixes" />
+    <MESSAGE value="Updated README.md" />
+    <MESSAGE value="updated README.md file" />
+    <MESSAGE value="updated some documentation files" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated some documentation files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Infrastructure/Repository/IAggregateRepository.cs</url>
+          <url>file://$PROJECT_DIR$/Infrastructure/EventStore/EventStoreAdmin.cs</url>
           <line>35</line>
-          <properties documentPath="$PROJECT_DIR$/Infrastructure/Repository/IAggregateRepository.cs" containingFunctionPresentation="Method 'Update'">
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/EventStore/EventStoreAdmin.cs" containingFunctionPresentation="Method 'CreateContinuousProjection'">
             <startOffsets>
-              <option value="1142" />
+              <option value="1481" />
             </startOffsets>
             <endOffsets>
-              <option value="1143" />
+              <option value="1482" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="53" />
+          <option name="timeStamp" value="119" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Application/Commands/AddTransaction/AddTransactionHandler.cs</url>
+          <url>file://$PROJECT_DIR$/WebApi/Controllers/SavingsAccountController.cs</url>
+          <line>26</line>
+          <properties documentPath="$PROJECT_DIR$/WebApi/Controllers/SavingsAccountController.cs" containingFunctionPresentation="Method 'CreateSavingsAccount'">
+            <startOffsets>
+              <option value="854" />
+            </startOffsets>
+            <endOffsets>
+              <option value="855" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Projections/ChangelogPartitionBackgroundService.cs</url>
+          <line>240</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/Projections/ChangelogPartitionBackgroundService.cs" containingFunctionPresentation="Method 'GetChangeLogCheckPoint'">
+            <startOffsets>
+              <option value="8357" />
+            </startOffsets>
+            <endOffsets>
+              <option value="8358" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Projections/ChangelogPartitionBackgroundService.cs</url>
+          <line>54</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/Projections/ChangelogPartitionBackgroundService.cs" containingFunctionPresentation="Lambda expression inside Method 'DoWork'">
+            <startOffsets>
+              <option value="1988" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1989" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Projections/ChangelogPartitionBackgroundService.cs</url>
+          <line>122</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/Projections/ChangelogPartitionBackgroundService.cs" containingFunctionPresentation="Method 'HandleEvents'">
+            <startOffsets>
+              <option value="4532" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4533" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/EventStore/EventStore.cs</url>
+          <line>49</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/EventStore/EventStore.cs" containingFunctionPresentation="Method 'GetStreamObservable'">
+            <startOffsets>
+              <option value="1318" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1319" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Projections/ChangelogPartitionBackgroundService.cs</url>
+          <line>159</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/Projections/ChangelogPartitionBackgroundService.cs" containingFunctionPresentation="Method 'LinkEventsToTenantStream'">
+            <startOffsets>
+              <option value="5649" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5650" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Projections/ChangelogPartitionBackgroundService.cs</url>
+          <line>152</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/Projections/ChangelogPartitionBackgroundService.cs" containingFunctionPresentation="Method 'ProcessTenantEvents'">
+            <startOffsets>
+              <option value="5407" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5442" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Projections/TenantViewProjection.cs</url>
+          <line>23</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/Projections/TenantViewProjection.cs" containingFunctionPresentation="Method 'ProcessEvents'">
+            <startOffsets>
+              <option value="807" />
+            </startOffsets>
+            <endOffsets>
+              <option value="853" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/EventStore/EventStoreGrpcStreamObservable.cs</url>
           <line>20</line>
-          <properties documentPath="$PROJECT_DIR$/Application/Commands/AddTransaction/AddTransactionHandler.cs" containingFunctionPresentation="Method 'Handle'">
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/EventStore/EventStoreGrpcStreamObservable.cs" containingFunctionPresentation="Method 'Subscribe'">
             <startOffsets>
-              <option value="782" />
+              <option value="627" />
             </startOffsets>
             <endOffsets>
-              <option value="783" />
+              <option value="628" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="93" />
+          <option name="timeStamp" value="134" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Domain/Aggregates/AggregateRoot.cs</url>
-          <line>59</line>
-          <properties documentPath="$PROJECT_DIR$/Domain/Aggregates/AggregateRoot.cs" containingFunctionPresentation="Method 'ReplayEvents'">
+          <url>file://$PROJECT_DIR$/Infrastructure/EventStore/EventStoreGrpcStreamObservable.cs</url>
+          <line>50</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/EventStore/EventStoreGrpcStreamObservable.cs" containingFunctionPresentation="Method 'InitAsync'">
             <startOffsets>
-              <option value="1562" />
+              <option value="1665" />
             </startOffsets>
             <endOffsets>
-              <option value="1598" />
+              <option value="1666" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="102" />
+          <option name="timeStamp" value="135" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Infrastructure/Repository/AggregateStore.cs</url>
-          <line>79</line>
-          <properties documentPath="$PROJECT_DIR$/Infrastructure/Repository/AggregateStore.cs" containingFunctionPresentation="Method 'LoadSnapshot'">
+          <url>file://$PROJECT_DIR$/Infrastructure/EventStore/EventStoreGrpcStreamObservable.cs</url>
+          <line>40</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/EventStore/EventStoreGrpcStreamObservable.cs" containingFunctionPresentation="Constructor 'EventStoreGrpcSubscription'">
             <startOffsets>
-              <option value="2328" />
+              <option value="1410" />
             </startOffsets>
             <endOffsets>
-              <option value="2427" />
+              <option value="1411" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="105" />
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/EventStore/EventStoreGrpcStreamObservable.cs</url>
+          <line>13</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/EventStore/EventStoreGrpcStreamObservable.cs" containingFunctionPresentation="Constructor 'EventStoreGrpcStreamObservable'">
+            <startOffsets>
+              <option value="420" />
+            </startOffsets>
+            <endOffsets>
+              <option value="421" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/Projections/ApplicationViewCheckpointStore.cs</url>
+          <line>19</line>
+          <properties documentPath="$PROJECT_DIR$/Infrastructure/Projections/ApplicationViewCheckpointStore.cs" containingFunctionPresentation="Method 'GetCheckpoint'">
+            <startOffsets>
+              <option value="632" />
+            </startOffsets>
+            <endOffsets>
+              <option value="633" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Projections/MongoContext.cs</url>
+          <line>32</line>
+          <properties documentPath="$PROJECT_DIR$/Projections/MongoContext.cs" containingFunctionPresentation="Method 'GetCollection'">
+            <startOffsets>
+              <option value="826" />
+            </startOffsets>
+            <endOffsets>
+              <option value="827" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Projections/MongoContext.cs</url>
+          <line>44</line>
+          <properties documentPath="$PROJECT_DIR$/Projections/MongoContext.cs" containingFunctionPresentation="Method 'ConfigureMongo'">
+            <startOffsets>
+              <option value="1173" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1174" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="141" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
