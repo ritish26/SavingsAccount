@@ -40,3 +40,33 @@ architecture, and I’m proud of the impact I’ve made.
 However, I feel ready for a new challenge—something that pushes me further, exposes me to different problem spaces, and gives me the
 opportunity to grow in areas like system design, architecture decisions, or even leadership.
 I’m looking for an environment where I can continue to learn, work with smart people, and contribute to meaningful projects at scale.”
+
+✅ CI/CD Deployment Process (Azure + AWS Hybrid)
+
+Our organization follows a hybrid CI/CD pipeline that integrates both Azure for source control and AWS for build and deployment. Below are the detailed steps:
+1. Source Code Management
+   The source code is managed in Azure Repos.
+   Developers create Pull Requests (PRs) to the main branch.
+
+2. Pipeline Trigger
+   Every pull request or commit to the main branch triggers an Azure DevOps pipeline.
+   This pipeline initiates the build and deployment workflow.
+
+3. Build Automation using AWS CodeBuild
+   The pipeline delegates the build job to AWS CodeBuild.
+   CodeBuild performs the following:
+     - Compiles the application
+     - Runs unit tests and code analysis (if configured)
+     - Builds Docker images
+
+4. Artifact & Image Storage
+   Upon successful build:
+   Build artifacts (e.g., binaries, compiled files) are stored in Amazon S3.
+   Docker images are pushed to Amazon Elastic Container Registry (ECR) with tag (myapp:latest)
+
+5. Deployment via Amazon EKS (Kubernetes)
+   The latest Docker image is pulled from Amazon ECR.
+   A rolling deployment is initiated on Amazon EKS (Kubernetes):
+   Kubernetes creates new pods(pod contain one or more container) with the updated image.
+   Once new pods are ready, it gradually terminates the old pods.
+   This ensures zero downtime and smooth updates.
