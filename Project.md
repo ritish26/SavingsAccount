@@ -1,6 +1,6 @@
 ✅ Project Description
 
-I am currently working on a project in QapMap, a platform used to manage cap tables—documents that outline a company’s ownership structure, listing all shareholders and their respective ownership percentages.
+I am currently working on a project **QapMap**, a platform used to manage cap tables—documents that outline a company’s ownership structure, listing all shareholders and their respective ownership percentages.
 We assist startups by providing a detailed view of their ESOPs and equity. Stakeholders can include both investors and employees.
 The platform supports features like:
 1. Share buybacks
