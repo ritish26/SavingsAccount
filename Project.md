@@ -5,13 +5,14 @@ We assist startups by providing a detailed view of their ESOPs and equity. Stake
 The platform supports features like:
 1. Share buybacks
 2. Vesting
-3. render
+3. Grant
 3. Exercise of equity awards
+4. Surrender
 
 ⸻
 
 ✅ Tech Stack and One-Liner Benefits
-1. C# / .NET: A modern, high-performance framework for building scalable, maintainable backend services.
+1. C# / .NET 8.0: A modern, high-performance framework for building scalable, maintainable backend services.
 2. Event Store: Enables reliable event sourcing by storing the full history of state changes for auditability and traceability.
 3. MongoDB: A flexible NoSQL database ideal for handling dynamic and hierarchical data structures like cap tables.
 4. AutoMapper: Simplifies object-to-object mapping, reducing boilerplate code in DTO conversions.
