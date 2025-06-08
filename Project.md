@@ -22,6 +22,8 @@ The platform supports features like:
 
 ✅ Benefits of using Nservice bus over mediator:
 NServiceBus works by enabling communication between different parts of a system using asynchronous messaging. When a command or event (like CreateUserCommand) is created, it is sent through the NServiceBus API. This message is then placed into a queue (such as RabbitMQ or Azure Service Bus), where it is safely stored until a service is ready to process it. This queuing mechanism ensures durability and prevents data loss. A handler in the receiving service picks up the message from the queue and executes the necessary business logic. If processing fails, NServiceBus automatically retries the message. If it continues to fail, the message is moved to an error queue for further inspection, ensuring no message is lost. This approach makes NServiceBus ideal for building reliable, scalable, and loosely-coupled distributed systems.
+
+
 ⸻
 
 ✅ Event Store vs MongoDB
@@ -34,6 +36,13 @@ Benefits:
 3. Improves overall system performance by decoupling read and write operations.
 4. Enables independent scaling of reads and writes.
 5. Increases system resilience and maintainability.
+
+✅ What is a distributed system? Give an example.
+A distributed system is a collection of independent computers or services that work together as a single system to achieve a common goal. These components run on different machines and communicate over a network to coordinate their actions.
+
+Example:
+An online shopping platform is a distributed system. The User Service handles logins, the Product Service manages inventory, the Order Service processes purchases, and the Payment Service handles transactions. Each service runs independently on separate servers but works together to provide a seamless experience to the user.
+
 
 
 ✅ Why do you want to switch jobs? (Answer for 5 years of experience, with last company being the only one)
