@@ -20,6 +20,8 @@ The platform supports features like:
 6. Docker: Provides lightweight containers for consistent development, testing, and deployment across environments.
 7. NServiceBus: Handles asynchronous messaging and distributed workflows for resilient and decoupled microservices.
 
+✅ Benefits of using Nservice bus over mediator:
+NServiceBus works by enabling communication between different parts of a system using asynchronous messaging. When a command or event (like CreateUserCommand) is created, it is sent through the NServiceBus API. This message is then placed into a queue (such as RabbitMQ or Azure Service Bus), where it is safely stored until a service is ready to process it. This queuing mechanism ensures durability and prevents data loss. A handler in the receiving service picks up the message from the queue and executes the necessary business logic. If processing fails, NServiceBus automatically retries the message. If it continues to fail, the message is moved to an error queue for further inspection, ensuring no message is lost. This approach makes NServiceBus ideal for building reliable, scalable, and loosely-coupled distributed systems.
 ⸻
 
 ✅ Event Store vs MongoDB
