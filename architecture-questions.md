@@ -30,7 +30,7 @@ In this, each microservice is subscribed to events published by other microservi
 In traditional CRUD, we store only the current state of an entity in a database. Every time an update happens, we overwrite the existing data.
 In event sourcing, instead of storing just the current state, we store a sequence of events that represent every change to the state. The current state is rebuilt by replaying these events.
 
-# 3. **How do you handle schema changes in events?**
+# 4. **How do you handle schema changes in events?**
 In event sourcing, once events are stored, they’re immutable — we can’t change them. So when the schema of an event evolves,
 we handle it by introducing versioning. There are a few common strategies like adding new fields, creating new event versions, or
 using upcasters to transform old events into the current format at read time.
@@ -45,7 +45,7 @@ b. **Additive Changes (non-breaking):**
 * Existing consumers can ignore the new fields.
 * Most commonly used for backward-compatible updates.
 
-# 4. **ACID in microservices**
+# 5. **ACID in microservices**
 ACID stands for Atomicity, Consistency, Isolation, and Durability, and it applies to database transactions. In a monolithic app, 
 it’s easy to maintain ACID because all data is in one database.
 But in microservices, data is split across services, often in different databases, so maintaining strict ACID is challenging. 
@@ -118,7 +118,7 @@ It is widely used to serve websites and APIs because it’s fast, lightweight, a
 
 3. Load Balancer
 * Distributes incoming traffic across multiple backend servers for better performance and reliability.
-- 3 instances of your app → Nginx balances load between them
+- Instances of your app → Nginx balances load between them
 
 4. SSL Termination
 - Handles HTTPS/SSL connections at the edge, so your backend can just deal with HTTP.
